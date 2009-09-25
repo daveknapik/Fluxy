@@ -1,0 +1,845 @@
+
+
+Processing FluxaliserController#index (for 62.164.161.18 at 2009-09-10 03:02:06) [GET]
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/index
+Completed in 26ms (View: 24, DB: 0) | 200 OK [http://fluxy.daveknapik.com/]
+
+
+Processing FluxaliserController#results (for 62.164.161.18 at 2009-09-10 03:02:16) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"6", "day"=>"2", "year"=>"2009"}, "authenticity_token"=>"KQq+09qGhCdx+JbRUmnELSE4WT13hVyVmc9LMscVF/c=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 11587ms (View: 11, DB: 0) | 200 OK [http://fluxy.daveknapik.com/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 62.164.161.18 at 2009-09-10 03:04:43) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"6", "day"=>"2", "year"=>"2009"}, "authenticity_token"=>"KQq+09qGhCdx+JbRUmnELSE4WT13hVyVmc9LMscVF/c=", "flickr_username"=>"russelldavies"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 1869ms (View: 13, DB: 0) | 200 OK [http://fluxy.daveknapik.com/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 62.164.161.18 at 2009-09-10 03:05:02) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"6", "day"=>"2", "year"=>"2009"}, "authenticity_token"=>"KQq+09qGhCdx+JbRUmnELSE4WT13hVyVmc9LMscVF/c=", "flickr_username"=>"elegantmint"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 2260ms (View: 106, DB: 0) | 200 OK [http://fluxy.daveknapik.com/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 62.164.161.18 at 2009-09-10 03:05:14) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"2", "year"=>"2009"}, "authenticity_token"=>"KQq+09qGhCdx+JbRUmnELSE4WT13hVyVmc9LMscVF/c=", "flickr_username"=>"elegantmint"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 8495ms (View: 29, DB: 0) | 200 OK [http://fluxy.daveknapik.com/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 62.164.161.18 at 2009-09-10 03:05:51) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"2", "year"=>"2009"}, "authenticity_token"=>"KQq+09qGhCdx+JbRUmnELSE4WT13hVyVmc9LMscVF/c=", "flickr_username"=>"elegantmint"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 8304ms (View: 49, DB: 0) | 200 OK [http://fluxy.daveknapik.com/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 62.164.161.18 at 2009-09-10 03:21:10) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"2", "year"=>"2009"}, "authenticity_token"=>"KQq+09qGhCdx+JbRUmnELSE4WT13hVyVmc9LMscVF/c=", "flickr_username"=>"elegantmint"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 8325ms (View: 25, DB: 0) | 200 OK [http://fluxy.daveknapik.com/fluxaliser/results]
+
+
+Processing FluxaliserController#index (for 62.164.161.18 at 2009-09-10 03:21:28) [GET]
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/index
+Completed in 10ms (View: 10, DB: 0) | 200 OK [http://fluxy.daveknapik.com/]
+
+
+Processing FluxaliserController#index (for 62.164.161.18 at 2009-09-10 03:35:54) [GET]
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/index
+Completed in 27ms (View: 24, DB: 0) | 200 OK [http://fluxy.daveknapik.com/]
+
+
+Processing FluxaliserController#results (for 62.164.161.18 at 2009-09-10 03:36:02) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"10", "year"=>"2009"}, "authenticity_token"=>"nzYCARwuxyjkzg3FVis/gGQBhlri9NVDXckU3aazT9Y=", "flickr_username"=>"demotive"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+
+ActionView::TemplateError (undefined method `[]' for nil:NilClass) on line #4 of app/views/fluxaliser/results.rhtml:
+1: <% if @flickr_username %>
+2: 	<div class="span-24">
+3: 	<p>
+4: 		<% if @photos[0][:found_photos_for_selected_date] %>
+5: 			Flickr photos for <%= link_to @flickr_username, "http://www.flickr.com/photos/#{@flickr_username}" %> taken <%= @photos[0][:timeperiod] %>. 
+6: 		<% elsif @photos[0][:showing_random_photos] %>
+7: 			We couldn't find any photos taken by <%= link_to @flickr_username, "http://www.flickr.com/photos/#{@flickr_username}" %> on <%= @destination.strftime('%A, %e %B %Y') %>, but here's a few random snaps from their Flickr account instead.
+
+    app/views/fluxaliser/results.rhtml:4:in `_run_rhtml_app47views47fluxaliser47results46rhtml'
+    /dh/passenger/lib/phusion_passenger/rack/request_handler.rb:91:in `process_request'
+    /dh/passenger/lib/phusion_passenger/abstract_request_handler.rb:206:in `main_loop'
+    /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:376:in `start_request_handler'
+    /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+    /dh/passenger/lib/phusion_passenger/utils.rb:182:in `safe_fork'
+    /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+    /dh/passenger/lib/phusion_passenger/abstract_server.rb:351:in `__send__'
+    /dh/passenger/lib/phusion_passenger/abstract_server.rb:351:in `main_loop'
+    /dh/passenger/lib/phusion_passenger/abstract_server.rb:195:in `start_synchronously'
+    /dh/passenger/lib/phusion_passenger/abstract_server.rb:162:in `start'
+    /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+    /dh/passenger/lib/phusion_passenger/spawn_manager.rb:261:in `spawn_rails_application'
+    /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    /dh/passenger/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    /dh/passenger/lib/phusion_passenger/spawn_manager.rb:254:in `spawn_rails_application'
+    /dh/passenger/lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+    /dh/passenger/lib/phusion_passenger/spawn_manager.rb:286:in `handle_spawn_application'
+    /dh/passenger/lib/phusion_passenger/abstract_server.rb:351:in `__send__'
+    /dh/passenger/lib/phusion_passenger/abstract_server.rb:351:in `main_loop'
+    /dh/passenger/lib/phusion_passenger/abstract_server.rb:195:in `start_synchronously'
+
+Rendering /home/daveknapik/fluxy/public/500.html (500 Internal Server Error)
+
+
+Processing FluxaliserController#results (for 62.164.161.18 at 2009-09-10 03:36:11) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"10", "year"=>"2009"}, "authenticity_token"=>"nzYCARwuxyjkzg3FVis/gGQBhlri9NVDXckU3aazT9Y=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 13258ms (View: 15, DB: 0) | 200 OK [http://fluxy.daveknapik.com/fluxaliser/results]
+
+
+Processing FluxaliserController#index (for 62.164.161.18 at 2009-09-10 03:37:11) [GET]
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/index
+Completed in 8ms (View: 8, DB: 0) | 200 OK [http://fluxy.daveknapik.com/]
+
+
+Processing FluxaliserController#results (for 62.164.161.18 at 2009-09-10 03:38:49) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"10", "year"=>"1995"}, "authenticity_token"=>"KQq+09qGhCdx+JbRUmnELSE4WT13hVyVmc9LMscVF/c=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 4167ms (View: 184, DB: 0) | 200 OK [http://fluxy.daveknapik.com/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 62.164.161.18 at 2009-09-10 03:39:17) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"10", "year"=>"2007"}, "authenticity_token"=>"KQq+09qGhCdx+JbRUmnELSE4WT13hVyVmc9LMscVF/c=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 7016ms (View: 30, DB: 0) | 200 OK [http://fluxy.daveknapik.com/fluxaliser/results]
+
+
+Processing FluxaliserController#index (for 62.164.161.18 at 2009-09-10 03:45:42) [GET]
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/index
+Completed in 27ms (View: 24, DB: 0) | 200 OK [http://fluxy.daveknapik.com/]
+
+
+Processing FluxaliserController#results (for 62.164.161.18 at 2009-09-10 03:45:54) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"10", "year"=>"2007"}, "authenticity_token"=>"KQq+09qGhCdx+JbRUmnELSE4WT13hVyVmc9LMscVF/c=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 6599ms (View: 18, DB: 0) | 200 OK [http://fluxy.daveknapik.com/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 62.164.161.18 at 2009-09-10 03:46:12) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"10", "year"=>"2006"}, "authenticity_token"=>"KQq+09qGhCdx+JbRUmnELSE4WT13hVyVmc9LMscVF/c=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 10296ms (View: 30, DB: 0) | 200 OK [http://fluxy.daveknapik.com/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 62.164.161.18 at 2009-09-10 03:52:23) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"8", "day"=>"31", "year"=>"2009"}, "authenticity_token"=>"KQq+09qGhCdx+JbRUmnELSE4WT13hVyVmc9LMscVF/c=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 4627ms (View: 15, DB: 0) | 200 OK [http://fluxy.daveknapik.com/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 62.164.161.18 at 2009-09-10 03:52:47) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"8", "day"=>"31", "year"=>"2000"}, "authenticity_token"=>"KQq+09qGhCdx+JbRUmnELSE4WT13hVyVmc9LMscVF/c=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 3604ms (View: 13, DB: 0) | 200 OK [http://fluxy.daveknapik.com/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 62.164.161.18 at 2009-09-10 03:59:36) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"8", "day"=>"31", "year"=>"2000"}, "authenticity_token"=>"KQq+09qGhCdx+JbRUmnELSE4WT13hVyVmc9LMscVF/c=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 3967ms (View: 16, DB: 0) | 200 OK [http://fluxy.daveknapik.com/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 62.164.161.18 at 2009-09-10 03:59:54) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"3", "day"=>"31", "year"=>"2000"}, "authenticity_token"=>"KQq+09qGhCdx+JbRUmnELSE4WT13hVyVmc9LMscVF/c=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 3964ms (View: 108, DB: 0) | 200 OK [http://fluxy.daveknapik.com/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 62.164.161.18 at 2009-09-10 04:00:08) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"11", "day"=>"31", "year"=>"2000"}, "authenticity_token"=>"KQq+09qGhCdx+JbRUmnELSE4WT13hVyVmc9LMscVF/c=", "flickr_username"=>"daveknapik"}
+
+ArgumentError (invalid date):
+  /usr/lib/ruby/1.8/date.rb:752:in `new'
+  app/controllers/fluxaliser_controller.rb:15:in `results'
+  /dh/passenger/lib/phusion_passenger/rack/request_handler.rb:91:in `process_request'
+  /dh/passenger/lib/phusion_passenger/abstract_request_handler.rb:206:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:376:in `start_request_handler'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/utils.rb:182:in `safe_fork'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:351:in `__send__'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:351:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:195:in `start_synchronously'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:162:in `start'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:261:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:254:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:286:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:351:in `__send__'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:351:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:195:in `start_synchronously'
+
+Rendering /home/daveknapik/fluxy/public/500.html (500 Internal Server Error)
+
+
+Processing FluxaliserController#results (for 62.164.161.18 at 2009-09-10 04:00:15) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"11", "day"=>"31", "year"=>"2000"}, "authenticity_token"=>"KQq+09qGhCdx+JbRUmnELSE4WT13hVyVmc9LMscVF/c=", "flickr_username"=>"daveknapik"}
+
+ArgumentError (invalid date):
+  /usr/lib/ruby/1.8/date.rb:752:in `new'
+  app/controllers/fluxaliser_controller.rb:15:in `results'
+  /dh/passenger/lib/phusion_passenger/rack/request_handler.rb:91:in `process_request'
+  /dh/passenger/lib/phusion_passenger/abstract_request_handler.rb:206:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:376:in `start_request_handler'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/utils.rb:182:in `safe_fork'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:351:in `__send__'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:351:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:195:in `start_synchronously'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:162:in `start'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:261:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:254:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:286:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:351:in `__send__'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:351:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:195:in `start_synchronously'
+
+Rendering /home/daveknapik/fluxy/public/500.html (500 Internal Server Error)
+
+
+Processing FluxaliserController#results (for 62.164.161.18 at 2009-09-10 04:00:20) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"11", "day"=>"31", "year"=>"2008"}, "authenticity_token"=>"KQq+09qGhCdx+JbRUmnELSE4WT13hVyVmc9LMscVF/c=", "flickr_username"=>"daveknapik"}
+
+ArgumentError (invalid date):
+  /usr/lib/ruby/1.8/date.rb:752:in `new'
+  app/controllers/fluxaliser_controller.rb:15:in `results'
+  /dh/passenger/lib/phusion_passenger/rack/request_handler.rb:91:in `process_request'
+  /dh/passenger/lib/phusion_passenger/abstract_request_handler.rb:206:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:376:in `start_request_handler'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/utils.rb:182:in `safe_fork'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:351:in `__send__'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:351:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:195:in `start_synchronously'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:162:in `start'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:261:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:254:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:286:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:351:in `__send__'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:351:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:195:in `start_synchronously'
+
+Rendering /home/daveknapik/fluxy/public/500.html (500 Internal Server Error)
+
+
+Processing FluxaliserController#index (for 62.164.161.18 at 2009-09-10 04:03:36) [GET]
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/index
+Completed in 25ms (View: 23, DB: 0) | 200 OK [http://fluxy.daveknapik.com/]
+
+
+Processing FluxaliserController#results (for 62.164.161.18 at 2009-09-10 04:04:03) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"10", "year"=>"2009"}, "authenticity_token"=>"nzYCARwuxyjkzg3FVis/gGQBhlri9NVDXckU3aazT9Y=", "flickr_username"=>"Demotive Mat J"}
+
+URI::InvalidURIError (bad URI(is not URI?): http://api.flickr.com/services/rest/?method=flickr.people.findByUsername&username=Demotive Mat J&api_key=fde46ce0f7c24b9380cb614880e7f9c6&api_sig=c6a1713ddff98d6b69055696ad6f30b0):
+  /usr/lib/ruby/1.8/uri/common.rb:436:in `split'
+  /usr/lib/ruby/1.8/uri/common.rb:485:in `parse'
+  lib/flickr/base.rb:58:in `send_request'
+  lib/flickr/people.rb:38:in `find_by_username'
+  app/models/fluxaliser.rb:19:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:18:in `results'
+  /dh/passenger/lib/phusion_passenger/rack/request_handler.rb:91:in `process_request'
+  /dh/passenger/lib/phusion_passenger/abstract_request_handler.rb:206:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:376:in `start_request_handler'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/utils.rb:182:in `safe_fork'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:351:in `__send__'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:351:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:195:in `start_synchronously'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:162:in `start'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:261:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:254:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:286:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:351:in `__send__'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:351:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:195:in `start_synchronously'
+
+Rendering /home/daveknapik/fluxy/public/500.html (500 Internal Server Error)
+
+
+Processing FluxaliserController#index (for 62.164.161.18 at 2009-09-10 04:04:16) [GET]
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/index
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://fluxy.daveknapik.com/]
+
+
+Processing FluxaliserController#results (for 62.164.161.18 at 2009-09-10 04:04:21) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"10", "year"=>"2007"}, "authenticity_token"=>"KQq+09qGhCdx+JbRUmnELSE4WT13hVyVmc9LMscVF/c=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 6430ms (View: 19, DB: 0) | 200 OK [http://fluxy.daveknapik.com/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 62.164.161.18 at 2009-09-10 04:04:40) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"10", "year"=>"2006"}, "authenticity_token"=>"KQq+09qGhCdx+JbRUmnELSE4WT13hVyVmc9LMscVF/c=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 12366ms (View: 30, DB: 0) | 200 OK [http://fluxy.daveknapik.com/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 62.164.161.18 at 2009-09-10 04:04:53) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"10", "year"=>"2009"}, "authenticity_token"=>"nzYCARwuxyjkzg3FVis/gGQBhlri9NVDXckU3aazT9Y=", "flickr_username"=>"Mat Johnson"}
+
+URI::InvalidURIError (bad URI(is not URI?): http://api.flickr.com/services/rest/?method=flickr.people.findByUsername&username=Mat Johnson&api_key=fde46ce0f7c24b9380cb614880e7f9c6&api_sig=6969b3644a1e428f7ad0a0a9b75eb91b):
+  /usr/lib/ruby/1.8/uri/common.rb:436:in `split'
+  /usr/lib/ruby/1.8/uri/common.rb:485:in `parse'
+  lib/flickr/base.rb:58:in `send_request'
+  lib/flickr/people.rb:38:in `find_by_username'
+  app/models/fluxaliser.rb:19:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:18:in `results'
+  /dh/passenger/lib/phusion_passenger/rack/request_handler.rb:91:in `process_request'
+  /dh/passenger/lib/phusion_passenger/abstract_request_handler.rb:206:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:376:in `start_request_handler'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/utils.rb:182:in `safe_fork'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:351:in `__send__'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:351:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:195:in `start_synchronously'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:162:in `start'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:261:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:254:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:286:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:351:in `__send__'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:351:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:195:in `start_synchronously'
+
+Rendering /home/daveknapik/fluxy/public/500.html (500 Internal Server Error)
+
+
+Processing FluxaliserController#results (for 62.164.161.18 at 2009-09-10 04:04:58) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"10", "year"=>"2009"}, "authenticity_token"=>"nzYCARwuxyjkzg3FVis/gGQBhlri9NVDXckU3aazT9Y=", "flickr_username"=>"demotive"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 1329ms (View: 32, DB: 0) | 200 OK [http://fluxy.daveknapik.com/fluxaliser/results]
+
+
+Processing FluxaliserController#index (for 62.164.161.18 at 2009-09-10 04:06:18) [GET]
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://fluxy.daveknapik.com/]
+
+
+Processing FluxaliserController#results (for 62.164.161.18 at 2009-09-10 04:06:21) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"10", "year"=>"2009"}, "authenticity_token"=>"nzYCARwuxyjkzg3FVis/gGQBhlri9NVDXckU3aazT9Y=", "flickr_username"=>"Demotive Mat J"}
+
+URI::InvalidURIError (bad URI(is not URI?): http://api.flickr.com/services/rest/?method=flickr.people.findByUsername&username=Demotive Mat J&api_key=fde46ce0f7c24b9380cb614880e7f9c6&api_sig=c6a1713ddff98d6b69055696ad6f30b0):
+  /usr/lib/ruby/1.8/uri/common.rb:436:in `split'
+  /usr/lib/ruby/1.8/uri/common.rb:485:in `parse'
+  lib/flickr/base.rb:58:in `send_request'
+  lib/flickr/people.rb:38:in `find_by_username'
+  app/models/fluxaliser.rb:19:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:18:in `results'
+  /dh/passenger/lib/phusion_passenger/rack/request_handler.rb:91:in `process_request'
+  /dh/passenger/lib/phusion_passenger/abstract_request_handler.rb:206:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:376:in `start_request_handler'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/utils.rb:182:in `safe_fork'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:351:in `__send__'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:351:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:195:in `start_synchronously'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:162:in `start'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:261:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:254:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:286:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:351:in `__send__'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:351:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:195:in `start_synchronously'
+
+Rendering /home/daveknapik/fluxy/public/500.html (500 Internal Server Error)
+
+
+Processing FluxaliserController#results (for 62.164.161.18 at 2009-09-10 04:06:29) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"10", "year"=>"2009"}, "authenticity_token"=>"nzYCARwuxyjkzg3FVis/gGQBhlri9NVDXckU3aazT9Y=", "flickr_username"=>"Mat Johnson"}
+
+URI::InvalidURIError (bad URI(is not URI?): http://api.flickr.com/services/rest/?method=flickr.people.findByUsername&username=Mat Johnson&api_key=fde46ce0f7c24b9380cb614880e7f9c6&api_sig=6969b3644a1e428f7ad0a0a9b75eb91b):
+  /usr/lib/ruby/1.8/uri/common.rb:436:in `split'
+  /usr/lib/ruby/1.8/uri/common.rb:485:in `parse'
+  lib/flickr/base.rb:58:in `send_request'
+  lib/flickr/people.rb:38:in `find_by_username'
+  app/models/fluxaliser.rb:19:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:18:in `results'
+  /dh/passenger/lib/phusion_passenger/rack/request_handler.rb:91:in `process_request'
+  /dh/passenger/lib/phusion_passenger/abstract_request_handler.rb:206:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:376:in `start_request_handler'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/utils.rb:182:in `safe_fork'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:351:in `__send__'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:351:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:195:in `start_synchronously'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:162:in `start'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:261:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:254:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:286:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:351:in `__send__'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:351:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:195:in `start_synchronously'
+
+Rendering /home/daveknapik/fluxy/public/500.html (500 Internal Server Error)
+
+
+Processing FluxaliserController#results (for 62.164.161.18 at 2009-09-10 04:06:45) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"10", "year"=>"2000"}, "authenticity_token"=>"KQq+09qGhCdx+JbRUmnELSE4WT13hVyVmc9LMscVF/c=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 3762ms (View: 37, DB: 0) | 200 OK [http://fluxy.daveknapik.com/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 62.164.161.18 at 2009-09-10 04:06:46) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"10", "year"=>"2009"}, "authenticity_token"=>"nzYCARwuxyjkzg3FVis/gGQBhlri9NVDXckU3aazT9Y=", "flickr_username"=>"chrishopkins77"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 3236ms (View: 12, DB: 0) | 200 OK [http://fluxy.daveknapik.com/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 62.164.161.18 at 2009-09-10 04:07:00) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"11", "day"=>"10", "year"=>"2000"}, "authenticity_token"=>"KQq+09qGhCdx+JbRUmnELSE4WT13hVyVmc9LMscVF/c=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 4276ms (View: 9, DB: 0) | 200 OK [http://fluxy.daveknapik.com/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 62.164.161.18 at 2009-09-10 04:07:22) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"2", "day"=>"10", "year"=>"2000"}, "authenticity_token"=>"KQq+09qGhCdx+JbRUmnELSE4WT13hVyVmc9LMscVF/c=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 3863ms (View: 14, DB: 0) | 200 OK [http://fluxy.daveknapik.com/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 62.164.161.18 at 2009-09-10 04:07:49) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"10", "year"=>"2009"}, "authenticity_token"=>"nzYCARwuxyjkzg3FVis/gGQBhlri9NVDXckU3aazT9Y=", "flickr_username"=>"Demotive Mat J"}
+
+URI::InvalidURIError (bad URI(is not URI?): http://api.flickr.com/services/rest/?method=flickr.people.findByUsername&username=Demotive Mat J&api_key=fde46ce0f7c24b9380cb614880e7f9c6&api_sig=c6a1713ddff98d6b69055696ad6f30b0):
+  /usr/lib/ruby/1.8/uri/common.rb:436:in `split'
+  /usr/lib/ruby/1.8/uri/common.rb:485:in `parse'
+  lib/flickr/base.rb:58:in `send_request'
+  lib/flickr/people.rb:38:in `find_by_username'
+  app/models/fluxaliser.rb:19:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:18:in `results'
+  /dh/passenger/lib/phusion_passenger/rack/request_handler.rb:91:in `process_request'
+  /dh/passenger/lib/phusion_passenger/abstract_request_handler.rb:206:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:376:in `start_request_handler'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/utils.rb:182:in `safe_fork'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:351:in `__send__'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:351:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:195:in `start_synchronously'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:162:in `start'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:261:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:254:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:286:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:351:in `__send__'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:351:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:195:in `start_synchronously'
+
+Rendering /home/daveknapik/fluxy/public/500.html (500 Internal Server Error)
+
+
+Processing FluxaliserController#results (for 62.164.161.18 at 2009-09-10 04:08:55) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"2", "day"=>"10", "year"=>"2000"}, "authenticity_token"=>"KQq+09qGhCdx+JbRUmnELSE4WT13hVyVmc9LMscVF/c=", "flickr_username"=>"demotive"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 1145ms (View: 13, DB: 0) | 200 OK [http://fluxy.daveknapik.com/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 62.164.161.18 at 2009-09-10 04:14:10) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"2", "day"=>"10", "year"=>"2000"}, "authenticity_token"=>"KQq+09qGhCdx+JbRUmnELSE4WT13hVyVmc9LMscVF/c=", "flickr_username"=>"demotive"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+
+ActionView::TemplateError (undefined method `[]' for nil:NilClass) on line #4 of app/views/fluxaliser/results.rhtml:
+1: <% if @flickr_username %>
+2: 	<div class="span-24">
+3: 	<p>
+4: 		<% if @photos[0][:found_photos_for_selected_date] %>
+5: 			Flickr photos for <%= link_to @flickr_username, "http://www.flickr.com/photos/#{@flickr_username}" %> taken <%= @photos[0][:timeperiod] %>. 
+6: 		<% elsif @photos[0][:showing_random_photos] %>
+7: 			We couldn't find any photos taken by <%= link_to @flickr_username, "http://www.flickr.com/photos/#{@flickr_username}" %> on <%= @destination.strftime('%A, %e %B %Y') %>, but here's a few random snaps from their Flickr account instead.
+
+    app/views/fluxaliser/results.rhtml:4:in `_run_rhtml_app47views47fluxaliser47results46rhtml'
+    /dh/passenger/lib/phusion_passenger/rack/request_handler.rb:91:in `process_request'
+    /dh/passenger/lib/phusion_passenger/abstract_request_handler.rb:206:in `main_loop'
+    /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:376:in `start_request_handler'
+    /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+    /dh/passenger/lib/phusion_passenger/utils.rb:182:in `safe_fork'
+    /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+    /dh/passenger/lib/phusion_passenger/abstract_server.rb:351:in `__send__'
+    /dh/passenger/lib/phusion_passenger/abstract_server.rb:351:in `main_loop'
+    /dh/passenger/lib/phusion_passenger/abstract_server.rb:195:in `start_synchronously'
+    /dh/passenger/lib/phusion_passenger/abstract_server.rb:162:in `start'
+    /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+    /dh/passenger/lib/phusion_passenger/spawn_manager.rb:261:in `spawn_rails_application'
+    /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    /dh/passenger/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    /dh/passenger/lib/phusion_passenger/spawn_manager.rb:254:in `spawn_rails_application'
+    /dh/passenger/lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+    /dh/passenger/lib/phusion_passenger/spawn_manager.rb:286:in `handle_spawn_application'
+    /dh/passenger/lib/phusion_passenger/abstract_server.rb:351:in `__send__'
+    /dh/passenger/lib/phusion_passenger/abstract_server.rb:351:in `main_loop'
+    /dh/passenger/lib/phusion_passenger/abstract_server.rb:195:in `start_synchronously'
+
+Rendering /home/daveknapik/fluxy/public/500.html (500 Internal Server Error)
+
+
+Processing FluxaliserController#index (for 62.164.161.18 at 2009-09-10 04:14:16) [GET]
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/index
+Completed in 18ms (View: 18, DB: 0) | 200 OK [http://fluxy.daveknapik.com/]
+
+
+Processing FluxaliserController#results (for 62.164.161.18 at 2009-09-10 04:14:20) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"10", "year"=>"2009"}, "authenticity_token"=>"KQq+09qGhCdx+JbRUmnELSE4WT13hVyVmc9LMscVF/c=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 12811ms (View: 14, DB: 0) | 200 OK [http://fluxy.daveknapik.com/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 62.164.161.18 at 2009-09-10 04:14:47) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"6", "year"=>"2009"}, "authenticity_token"=>"KQq+09qGhCdx+JbRUmnELSE4WT13hVyVmc9LMscVF/c=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 8882ms (View: 22, DB: 0) | 200 OK [http://fluxy.daveknapik.com/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 62.164.161.18 at 2009-09-10 04:16:29) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"2", "year"=>"2009"}, "authenticity_token"=>"KQq+09qGhCdx+JbRUmnELSE4WT13hVyVmc9LMscVF/c=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 8230ms (View: 33, DB: 0) | 200 OK [http://fluxy.daveknapik.com/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 62.164.161.18 at 2009-09-10 04:17:11) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"2", "year"=>"2009"}, "authenticity_token"=>"KQq+09qGhCdx+JbRUmnELSE4WT13hVyVmc9LMscVF/c=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 14258ms (View: 135, DB: 0) | 200 OK [http://fluxy.daveknapik.com/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 62.164.161.18 at 2009-09-10 04:27:59) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"2", "year"=>"2009"}, "authenticity_token"=>"KQq+09qGhCdx+JbRUmnELSE4WT13hVyVmc9LMscVF/c=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 8078ms (View: 20, DB: 0) | 200 OK [http://fluxy.daveknapik.com/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 62.164.161.18 at 2009-09-10 04:28:17) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"2", "year"=>"2009"}, "authenticity_token"=>"KQq+09qGhCdx+JbRUmnELSE4WT13hVyVmc9LMscVF/c=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 7431ms (View: 23, DB: 0) | 200 OK [http://fluxy.daveknapik.com/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 62.164.161.18 at 2009-09-10 04:36:15) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"2", "year"=>"2009"}, "authenticity_token"=>"KQq+09qGhCdx+JbRUmnELSE4WT13hVyVmc9LMscVF/c=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 7624ms (View: 21, DB: 0) | 200 OK [http://fluxy.daveknapik.com/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 62.164.161.18 at 2009-09-10 04:36:33) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"2", "year"=>"2009"}, "authenticity_token"=>"KQq+09qGhCdx+JbRUmnELSE4WT13hVyVmc9LMscVF/c=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 7342ms (View: 26, DB: 0) | 200 OK [http://fluxy.daveknapik.com/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 62.164.161.18 at 2009-09-10 04:37:04) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"2", "year"=>"2009"}, "authenticity_token"=>"KQq+09qGhCdx+JbRUmnELSE4WT13hVyVmc9LMscVF/c=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 7555ms (View: 129, DB: 0) | 200 OK [http://fluxy.daveknapik.com/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 62.164.161.18 at 2009-09-10 04:37:23) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"2", "year"=>"2009"}, "authenticity_token"=>"KQq+09qGhCdx+JbRUmnELSE4WT13hVyVmc9LMscVF/c=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 7650ms (View: 49, DB: 0) | 200 OK [http://fluxy.daveknapik.com/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 62.164.161.18 at 2009-09-10 04:38:25) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"2", "year"=>"2009"}, "authenticity_token"=>"KQq+09qGhCdx+JbRUmnELSE4WT13hVyVmc9LMscVF/c=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 8226ms (View: 63, DB: 0) | 200 OK [http://fluxy.daveknapik.com/fluxaliser/results]
+
+
+Processing FluxaliserController#index (for 62.164.161.18 at 2009-09-10 04:38:42) [GET]
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/index
+Completed in 102ms (View: 102, DB: 0) | 200 OK [http://fluxy.daveknapik.com/]
+
+
+Processing FluxaliserController#results (for 62.164.161.18 at 2009-09-10 04:38:45) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"10", "year"=>"2009"}, "authenticity_token"=>"KQq+09qGhCdx+JbRUmnELSE4WT13hVyVmc9LMscVF/c=", "flickr_username"=>""}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://fluxy.daveknapik.com/fluxaliser/results]
+
+
+Processing FluxaliserController#index (for 62.164.161.18 at 2009-09-10 04:38:46) [GET]
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/index
+Completed in 7ms (View: 7, DB: 0) | 200 OK [http://fluxy.daveknapik.com/]
+
+
+Processing FluxaliserController#results (for 62.164.161.18 at 2009-09-10 04:38:49) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"10", "year"=>"2009"}, "authenticity_token"=>"KQq+09qGhCdx+JbRUmnELSE4WT13hVyVmc9LMscVF/c=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 7906ms (View: 74, DB: 0) | 200 OK [http://fluxy.daveknapik.com/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 62.164.161.18 at 2009-09-10 04:40:27) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"10", "year"=>"2009"}, "authenticity_token"=>"KQq+09qGhCdx+JbRUmnELSE4WT13hVyVmc9LMscVF/c=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 8147ms (View: 82, DB: 0) | 200 OK [http://fluxy.daveknapik.com/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 62.164.161.18 at 2009-09-10 04:44:14) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"10", "year"=>"2009"}, "authenticity_token"=>"KQq+09qGhCdx+JbRUmnELSE4WT13hVyVmc9LMscVF/c=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 7849ms (View: 34, DB: 0) | 200 OK [http://fluxy.daveknapik.com/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 62.164.161.18 at 2009-09-10 04:44:36) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"10", "year"=>"2009"}, "authenticity_token"=>"KQq+09qGhCdx+JbRUmnELSE4WT13hVyVmc9LMscVF/c=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 7746ms (View: 34, DB: 0) | 200 OK [http://fluxy.daveknapik.com/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 62.164.161.18 at 2009-09-10 04:45:12) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"10", "year"=>"2009"}, "authenticity_token"=>"KQq+09qGhCdx+JbRUmnELSE4WT13hVyVmc9LMscVF/c=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 8012ms (View: 29, DB: 0) | 200 OK [http://fluxy.daveknapik.com/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 62.164.161.18 at 2009-09-10 04:45:44) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"10", "year"=>"2009"}, "authenticity_token"=>"KQq+09qGhCdx+JbRUmnELSE4WT13hVyVmc9LMscVF/c=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 7720ms (View: 21, DB: 0) | 200 OK [http://fluxy.daveknapik.com/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 62.164.161.18 at 2009-09-10 04:45:55) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"10", "year"=>"2009"}, "authenticity_token"=>"KQq+09qGhCdx+JbRUmnELSE4WT13hVyVmc9LMscVF/c=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 7806ms (View: 12, DB: 0) | 200 OK [http://fluxy.daveknapik.com/fluxaliser/results]
+
+
+Processing FluxaliserController#index (for 62.164.161.18 at 2009-09-10 04:46:09) [GET]
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/index
+Completed in 10ms (View: 10, DB: 0) | 200 OK [http://fluxy.daveknapik.com/]
+
+
+Processing FluxaliserController#results (for 62.164.161.18 at 2009-09-10 04:46:16) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"4", "day"=>"2", "year"=>"2009"}, "authenticity_token"=>"KQq+09qGhCdx+JbRUmnELSE4WT13hVyVmc9LMscVF/c=", "flickr_username"=>""}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://fluxy.daveknapik.com/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 62.164.161.18 at 2009-09-10 04:46:20) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"4", "day"=>"2", "year"=>"2009"}, "authenticity_token"=>"KQq+09qGhCdx+JbRUmnELSE4WT13hVyVmc9LMscVF/c=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 7101ms (View: 11, DB: 0) | 200 OK [http://fluxy.daveknapik.com/fluxaliser/results]
+
+
+Processing FluxaliserController#index (for 62.164.161.18 at 2009-09-10 04:46:41) [GET]
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/index
+Completed in 7ms (View: 7, DB: 0) | 200 OK [http://fluxy.daveknapik.com/]
+
+
+Processing FluxaliserController#results (for 62.164.161.18 at 2009-09-10 04:46:46) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"10", "year"=>"2009"}, "authenticity_token"=>"KQq+09qGhCdx+JbRUmnELSE4WT13hVyVmc9LMscVF/c=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 13751ms (View: 13, DB: 0) | 200 OK [http://fluxy.daveknapik.com/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 62.164.161.18 at 2009-09-10 04:47:25) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"10", "year"=>"2009"}, "authenticity_token"=>"KQq+09qGhCdx+JbRUmnELSE4WT13hVyVmc9LMscVF/c=", "flickr_username"=>"elegantmint"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 9028ms (View: 20, DB: 0) | 200 OK [http://fluxy.daveknapik.com/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 62.164.161.18 at 2009-09-10 04:59:27) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"10", "year"=>"1992"}, "authenticity_token"=>"KQq+09qGhCdx+JbRUmnELSE4WT13hVyVmc9LMscVF/c=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 3915ms (View: 15, DB: 0) | 200 OK [http://fluxy.daveknapik.com/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 62.164.161.18 at 2009-09-10 04:59:44) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"2", "day"=>"10", "year"=>"2006"}, "authenticity_token"=>"KQq+09qGhCdx+JbRUmnELSE4WT13hVyVmc9LMscVF/c=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 3820ms (View: 6, DB: 0) | 200 OK [http://fluxy.daveknapik.com/fluxaliser/results]
+
+
+Processing FluxaliserController#index (for 62.164.161.18 at 2009-09-10 04:59:54) [GET]
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/index
+Completed in 12ms (View: 11, DB: 0) | 200 OK [http://fluxy.daveknapik.com/]
+
+
+Processing FluxaliserController#results (for 62.164.161.18 at 2009-09-10 05:00:05) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"3", "day"=>"10", "year"=>"2009"}, "authenticity_token"=>"KQq+09qGhCdx+JbRUmnELSE4WT13hVyVmc9LMscVF/c=", "flickr_username"=>"russelldavies"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 29709ms (View: 9, DB: 0) | 200 OK [http://fluxy.daveknapik.com/fluxaliser/results]
+
+
+Processing FluxaliserController#index (for 62.164.161.18 at 2009-09-10 06:59:31) [GET]
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/index
+Completed in 99ms (View: 96, DB: 0) | 200 OK [http://fluxy.daveknapik.com/]
+
+
+Processing FluxaliserController#results (for 62.164.161.18 at 2009-09-10 06:59:43) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"7", "day"=>"3", "year"=>"2009"}, "authenticity_token"=>"KQq+09qGhCdx+JbRUmnELSE4WT13hVyVmc9LMscVF/c=", "flickr_username"=>"iggysodashell"}
+
+RuntimeError (1: User not found):
+  lib/flickr/base.rb:68:in `send_request'
+  lib/flickr/people.rb:38:in `find_by_username'
+  app/models/fluxaliser.rb:19:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:19:in `results'
+  /dh/passenger/lib/phusion_passenger/rack/request_handler.rb:91:in `process_request'
+  /dh/passenger/lib/phusion_passenger/abstract_request_handler.rb:206:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:376:in `start_request_handler'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/utils.rb:182:in `safe_fork'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:351:in `__send__'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:351:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:195:in `start_synchronously'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:162:in `start'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:261:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:254:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:286:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:351:in `__send__'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:351:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:195:in `start_synchronously'
+
+Rendering /home/daveknapik/fluxy/public/500.html (500 Internal Server Error)
+
+
+Processing FluxaliserController#results (for 62.164.161.18 at 2009-09-10 06:59:54) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"7", "day"=>"3", "year"=>"2009"}, "authenticity_token"=>"KQq+09qGhCdx+JbRUmnELSE4WT13hVyVmc9LMscVF/c=", "flickr_username"=>"larocat"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 16376ms (View: 7, DB: 0) | 200 OK [http://fluxy.daveknapik.com/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 62.164.161.18 at 2009-09-10 07:06:40) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"7", "day"=>"3", "year"=>"2009"}, "authenticity_token"=>"KQq+09qGhCdx+JbRUmnELSE4WT13hVyVmc9LMscVF/c=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 19097ms (View: 33, DB: 0) | 200 OK [http://fluxy.daveknapik.com/fluxaliser/results]
+
+
+Processing FluxaliserController#index (for 188.221.15.161 at 2009-09-24 11:25:12) [GET]
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/index
+Completed in 267ms (View: 265, DB: 0) | 200 OK [http://fluxy.daveknapik.com/]

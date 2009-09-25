@@ -1,0 +1,20 @@
+<div>
+	<fieldset>
+	    <legend>Fluxy</legend>
+		<% form_tag :action => 'results' do %>
+			<p>
+				<label for="destination_date">Which date would you like to travel back to?</label><br />
+				<%= select_date(Date.today, :prefix => "destination", :start_year => Date.today.year, :end_year => 1990, :order => [:day, :month, :year]) %>
+			</p>
+
+			<p>
+				<label for="flickr_username">Flickr Username</label><br />
+				<%= text_field_tag :flickr_username, params[:flickr_username] %>
+			</p>
+
+			<p>
+				<%= submit_tag "Submit" %>
+			</p>
+		<% end %>
+	</fieldset>
+</div>

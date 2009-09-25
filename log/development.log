@@ -1,0 +1,2456 @@
+
+
+Processing FluxaliserController#index (for 127.0.0.1 at 2009-09-04 11:00:15) [GET]
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/index
+Completed in 76ms (View: 74, DB: 0) | 200 OK [http://0.0.0.0/fluxaliser]
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 11:00:18) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>""}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 11ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/fluxaliser/results]
+
+
+Processing FluxaliserController#index (for 127.0.0.1 at 2009-09-04 11:11:23) [GET]
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/index
+Completed in 34ms (View: 32, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-04 11:11:41) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FluxaliserController#index (for 127.0.0.1 at 2009-09-04 11:11:50) [GET]
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/index
+Completed in 34ms (View: 32, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 11:11:51) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>""}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 11ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/fluxaliser/results]
+
+
+Processing FluxaliserController#index (for 127.0.0.1 at 2009-09-04 11:11:54) [GET]
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/index
+Completed in 13ms (View: 11, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 11:12:21) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+
+NameError (undefined local variable or method `logger' for Fluxaliser:Class):
+  app/models/fluxaliser.rb:16:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:17:in `results'
+
+Rendered rescues/_trace (42.4ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 11:14:33) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+hi
+
+ArgumentError (File does not exist: .):
+  /Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib/xmlsimple.rb:984:in `find_xml_file'
+  /Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib/xmlsimple.rb:168:in `xml_in'
+  /Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib/xmlsimple.rb:203:in `xml_in'
+  lib/flickr.rb:66:in `request'
+  app/models/fluxaliser.rb:18:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:17:in `results'
+
+Rendered rescues/_trace (47.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 11:15:08) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+#<Flickr:0x241d3e8>
+
+ArgumentError (File does not exist: .):
+  /Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib/xmlsimple.rb:984:in `find_xml_file'
+  /Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib/xmlsimple.rb:168:in `xml_in'
+  /Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib/xmlsimple.rb:203:in `xml_in'
+  lib/flickr.rb:66:in `request'
+  app/models/fluxaliser.rb:18:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:17:in `results'
+
+Rendered rescues/_trace (50.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 11:15:32) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+
+ArgumentError (File does not exist: .):
+  /Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib/xmlsimple.rb:984:in `find_xml_file'
+  /Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib/xmlsimple.rb:168:in `xml_in'
+  /Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib/xmlsimple.rb:203:in `xml_in'
+  lib/flickr.rb:66:in `request'
+  app/models/fluxaliser.rb:16:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:17:in `results'
+
+Rendered rescues/_trace (43.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 11:16:39) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+http://flickr.com/services/rest/?api_key=fde46ce0f7c24b9380cb614880e7f9c6&method=flickr.people.findByUsername
+
+ArgumentError (File does not exist: .):
+  /Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib/xmlsimple.rb:984:in `find_xml_file'
+  /Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib/xmlsimple.rb:168:in `xml_in'
+  /Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib/xmlsimple.rb:203:in `xml_in'
+  lib/flickr.rb:66:in `request'
+  app/models/fluxaliser.rb:18:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:17:in `results'
+
+Rendered rescues/_trace (60.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 11:18:00) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+http://flickr.com/services/rest/?api_key=fde46ce0f7c24b9380cb614880e7f9c6&method=flickr.people.findByUsername
+
+ArgumentError (File does not exist: .):
+  /Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib/xmlsimple.rb:984:in `find_xml_file'
+  /Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib/xmlsimple.rb:168:in `xml_in'
+  /Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib/xmlsimple.rb:203:in `xml_in'
+  lib/flickr.rb:66:in `request'
+  app/models/fluxaliser.rb:18:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:17:in `results'
+
+Rendered rescues/_trace (47.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 11:18:49) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+usernamedaveknapik
+http://flickr.com/services/rest/?api_key=fde46ce0f7c24b9380cb614880e7f9c6&method=flickr.people.findByUsername
+usernamedaveknapik
+
+ArgumentError (File does not exist: .):
+  /Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib/xmlsimple.rb:984:in `find_xml_file'
+  /Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib/xmlsimple.rb:168:in `xml_in'
+  /Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib/xmlsimple.rb:203:in `xml_in'
+  lib/flickr.rb:66:in `request'
+  app/models/fluxaliser.rb:18:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:17:in `results'
+
+Rendered rescues/_trace (49.2ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 11:21:00) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+http://flickr.com/services/rest/?api_key=fde46ce0f7c24b9380cb614880e7f9c6&method=flickr.people.findByUsername
+
+NoMethodError (undefined method `each_key' for #<String:0x240da4c>):
+  lib/flickr.rb:76:in `request_url'
+  lib/flickr.rb:66:in `request'
+  lib/flickr.rb:143:in `method_missing'
+  lib/flickr.rb:76:in `request_url'
+  lib/flickr.rb:76:in `each_key'
+  lib/flickr.rb:76:in `request_url'
+  lib/flickr.rb:66:in `request'
+  app/models/fluxaliser.rb:18:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:17:in `results'
+
+Rendered rescues/_trace (48.8ms)
+Rendered rescues/_request_and_response (2.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 11:21:45) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+http://flickr.com/services/rest/?api_key=fde46ce0f7c24b9380cb614880e7f9c6&method=flickr.people.findByUsername
+
+NoMethodError (undefined method `each_key' for #<String:0x2312084>):
+  lib/flickr.rb:76:in `request_url'
+  lib/flickr.rb:66:in `request'
+  lib/flickr.rb:143:in `method_missing'
+  lib/flickr.rb:76:in `request_url'
+  lib/flickr.rb:76:in `each_key'
+  lib/flickr.rb:76:in `request_url'
+  lib/flickr.rb:66:in `request'
+  app/models/fluxaliser.rb:18:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:17:in `results'
+
+Rendered rescues/_trace (124.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 11:21:54) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+http://flickr.com/services/rest/?api_key=fde46ce0f7c24b9380cb614880e7f9c6&method=flickr.people.findByUsername
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.gsub):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/cgi.rb:342:in `escape'
+  lib/flickr.rb:76:in `request_url'
+  lib/flickr.rb:76:in `each'
+  lib/flickr.rb:76:in `request_url'
+  lib/flickr.rb:66:in `request'
+  app/models/fluxaliser.rb:18:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:17:in `results'
+
+Rendered rescues/_trace (47.7ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 11:22:42) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+http://flickr.com/services/rest/?api_key=fde46ce0f7c24b9380cb614880e7f9c6&method=flickr.people.findByUsername
+
+ArgumentError (File does not exist: .):
+  /Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib/xmlsimple.rb:984:in `find_xml_file'
+  /Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib/xmlsimple.rb:168:in `xml_in'
+  /Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib/xmlsimple.rb:203:in `xml_in'
+  lib/flickr.rb:66:in `request'
+  app/models/fluxaliser.rb:18:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:17:in `results'
+
+Rendered rescues/_trace (47.5ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 11:23:11) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+http://flickr.com/services/rest/?api_key=fde46ce0f7c24b9380cb614880e7f9c6&method=flickr.people.findByUsername
+
+ArgumentError (File does not exist: .):
+  /Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib/xmlsimple.rb:984:in `find_xml_file'
+  /Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib/xmlsimple.rb:168:in `xml_in'
+  /Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib/xmlsimple.rb:203:in `xml_in'
+  lib/flickr.rb:66:in `request'
+  app/models/fluxaliser.rb:18:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:17:in `results'
+
+Rendered rescues/_trace (110.0ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 11:28:43) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+http://flickr.com/services/rest/?api_key=fde46ce0f7c24b9380cb614880e7f9c6&method=flickr.people.findByUsername
+
+ArgumentError (File does not exist: .):
+  /Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib/xmlsimple.rb:984:in `find_xml_file'
+  /Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib/xmlsimple.rb:168:in `xml_in'
+  /Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib/xmlsimple.rb:203:in `xml_in'
+  lib/flickr.rb:66:in `request'
+  app/models/fluxaliser.rb:18:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:17:in `results'
+
+Rendered rescues/_trace (65.8ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 11:33:50) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+
+NoMethodError (undefined method `each_key' for [{"username"=>"daveknapik"}]:Array):
+  lib/flickr.rb:75:in `request_url'
+  app/models/fluxaliser.rb:16:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:17:in `results'
+
+Rendered rescues/_trace (46.6ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 11:34:38) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+
+NoMethodError (undefined method `each_key' for [{"username"=>"daveknapik"}]:Array):
+  lib/flickr.rb:75:in `request_url'
+  app/models/fluxaliser.rb:16:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:17:in `results'
+
+Rendered rescues/_trace (115.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 11:34:48) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+http://flickr.com/services/rest/?api_key=fde46ce0f7c24b9380cb614880e7f9c6&method=flickr.people.findByUsername
+
+ArgumentError (File does not exist: .):
+  /Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib/xmlsimple.rb:984:in `find_xml_file'
+  /Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib/xmlsimple.rb:168:in `xml_in'
+  /Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib/xmlsimple.rb:203:in `xml_in'
+  lib/flickr.rb:66:in `request'
+  app/models/fluxaliser.rb:18:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:17:in `results'
+
+Rendered rescues/_trace (54.2ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 11:35:35) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+http://flickr.com/services/rest/?api_key=fde46ce0f7c24b9380cb614880e7f9c6&method=flickr.people.findByUsername
+
+NoMethodError (undefined method `each_key' for #<String:0x240da60>):
+  lib/flickr.rb:75:in `request_url'
+  lib/flickr.rb:66:in `request'
+  lib/flickr.rb:142:in `method_missing'
+  lib/flickr.rb:75:in `request_url'
+  lib/flickr.rb:75:in `each_key'
+  lib/flickr.rb:75:in `request_url'
+  lib/flickr.rb:66:in `request'
+  app/models/fluxaliser.rb:18:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:17:in `results'
+
+Rendered rescues/_trace (48.5ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 11:36:10) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+http://flickr.com/services/rest/?api_key=fde46ce0f7c24b9380cb614880e7f9c6&method=flickr.people.findByUsername
+
+ArgumentError (File does not exist: .):
+  /Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib/xmlsimple.rb:984:in `find_xml_file'
+  /Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib/xmlsimple.rb:168:in `xml_in'
+  /Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib/xmlsimple.rb:203:in `xml_in'
+  lib/flickr.rb:66:in `request'
+  app/models/fluxaliser.rb:18:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:17:in `results'
+
+Rendered rescues/_trace (47.6ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 11:36:16) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+http://flickr.com/services/rest/?api_key=fde46ce0f7c24b9380cb614880e7f9c6&method=flickr.people.findByUsername
+
+ArgumentError (File does not exist: .):
+  /Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib/xmlsimple.rb:984:in `find_xml_file'
+  /Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib/xmlsimple.rb:168:in `xml_in'
+  /Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib/xmlsimple.rb:203:in `xml_in'
+  lib/flickr.rb:66:in `request'
+  app/models/fluxaliser.rb:18:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:17:in `results'
+
+Rendered rescues/_trace (141.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 11:36:51) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+http://flickr.com/services/rest/?api_key=fde46ce0f7c24b9380cb614880e7f9c6&method=flickr.people.findByUsername
+usernamedaveknapik
+
+ArgumentError (File does not exist: .):
+  /Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib/xmlsimple.rb:984:in `find_xml_file'
+  /Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib/xmlsimple.rb:168:in `xml_in'
+  /Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib/xmlsimple.rb:203:in `xml_in'
+  lib/flickr.rb:67:in `request'
+  app/models/fluxaliser.rb:18:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:17:in `results'
+
+Rendered rescues/_trace (61.2ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 11:37:27) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+
+SyntaxError (/Library/WebServer/Documents/fluxy/lib/flickr.rb:67: syntax error, unexpected tIDENTIFIER, expecting ')'
+    response = XmlSimple.xml_in(http_get(r...
+            ^
+/Library/WebServer/Documents/fluxy/lib/flickr.rb:76: syntax error, unexpected kDO_BLOCK, expecting kEND
+    params[0][0].each_key do |key| url += "&#{key}=" + CGI...
+                            ^
+/Library/WebServer/Documents/fluxy/lib/flickr.rb:492: syntax error, unexpected kEND, expecting $end):
+  app/models/fluxaliser.rb:1
+  app/controllers/fluxaliser_controller.rb:17:in `results'
+
+Rendered rescues/_trace (54.1ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 11:38:08) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+http://flickr.com/services/rest/?api_key=fde46ce0f7c24b9380cb614880e7f9c6&method=flickr.people.findByUsername
+
+
+ArgumentError (File does not exist: .):
+  /Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib/xmlsimple.rb:984:in `find_xml_file'
+  /Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib/xmlsimple.rb:168:in `xml_in'
+  /Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib/xmlsimple.rb:203:in `xml_in'
+  lib/flickr.rb:67:in `request'
+  app/models/fluxaliser.rb:18:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:17:in `results'
+
+Rendered rescues/_trace (58.2ms)
+Rendered rescues/_request_and_response (2.9ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 11:39:30) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+
+http://flickr.com/services/rest/?api_key=fde46ce0f7c24b9380cb614880e7f9c6&method=flickr.people.findByUsername
+
+
+ArgumentError (File does not exist: .):
+  /Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib/xmlsimple.rb:984:in `find_xml_file'
+  /Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib/xmlsimple.rb:168:in `xml_in'
+  /Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib/xmlsimple.rb:203:in `xml_in'
+  lib/flickr.rb:67:in `request'
+  app/models/fluxaliser.rb:19:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:17:in `results'
+
+Rendered rescues/_trace (106.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 11:40:41) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+
+http://flickr.com/services/rest/?api_key=fde46ce0f7c24b9380cb614880e7f9c6&method=flickr.people.findByUsername
+
+
+ArgumentError (File does not exist: .):
+  /Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib/xmlsimple.rb:984:in `find_xml_file'
+  /Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib/xmlsimple.rb:168:in `xml_in'
+  /Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib/xmlsimple.rb:203:in `xml_in'
+  lib/flickr.rb:67:in `request'
+  app/models/fluxaliser.rb:19:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:17:in `results'
+
+Rendered rescues/_trace (43.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 11:41:29) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+
+SyntaxError (/Library/WebServer/Documents/fluxy/app/models/fluxaliser.rb:18: syntax error, unexpected ')', expecting kEND
+...username" => flickr_username)) + "&username=daveknapik"
+                              ^):
+  app/controllers/fluxaliser_controller.rb:17:in `results'
+
+Rendered rescues/_trace (64.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 11:41:59) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+
+http://flickr.com/services/rest/?api_key=fde46ce0f7c24b9380cb614880e7f9c6&method=flickr.people.findByUsername
+http://flickr.com/services/rest/?api_key=fde46ce0f7c24b9380cb614880e7f9c6&method=flickr.people.findByUsername&username=daveknapik
+
+
+ArgumentError (File does not exist: .):
+  /Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib/xmlsimple.rb:984:in `find_xml_file'
+  /Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib/xmlsimple.rb:168:in `xml_in'
+  /Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib/xmlsimple.rb:203:in `xml_in'
+  lib/flickr.rb:67:in `request'
+  app/models/fluxaliser.rb:20:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:17:in `results'
+
+Rendered rescues/_trace (112.3ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 11:42:47) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+
+http://flickr.com/services/rest/?api_key=fde46ce0f7c24b9380cb614880e7f9c6&method=flickr.people.findByUsername
+
+
+ArgumentError (File does not exist: .):
+  /Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib/xmlsimple.rb:984:in `find_xml_file'
+  /Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib/xmlsimple.rb:168:in `xml_in'
+  /Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib/xmlsimple.rb:203:in `xml_in'
+  lib/flickr.rb:67:in `request'
+  app/models/fluxaliser.rb:19:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:17:in `results'
+
+Rendered rescues/_trace (43.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 11:44:41) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+
+http://flickr.com/services/rest/?api_key=fde46ce0f7c24b9380cb614880e7f9c6&method=flickr.people.findByUsername
+
+
+ArgumentError (File does not exist: .):
+  /Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib/xmlsimple.rb:984:in `find_xml_file'
+  /Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib/xmlsimple.rb:168:in `xml_in'
+  /Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib/xmlsimple.rb:203:in `xml_in'
+  lib/flickr.rb:67:in `request'
+  app/models/fluxaliser.rb:19:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:17:in `results'
+
+Rendered rescues/_trace (47.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#index (for 127.0.0.1 at 2009-09-04 13:31:53) [GET]
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/index
+Completed in 39ms (View: 36, DB: 0) | 200 OK [http://0.0.0.0/fluxaliser/]
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 13:31:55) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>""}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 13:32:00) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+
+http://flickr.com/services/rest/?api_key=&method=flickr.people.findByUsername
+
+ArgumentError (File does not exist: .):
+  /Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib/xmlsimple.rb:984:in `find_xml_file'
+  /Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib/xmlsimple.rb:168:in `xml_in'
+  /Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib/xmlsimple.rb:203:in `xml_in'
+  flickr (1.0.2) /flickr.rb:66:in `request'
+  app/models/fluxaliser.rb:19:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:17:in `results'
+
+Rendered rescues/_trace (101.9ms)
+Rendered rescues/_request_and_response (1.9ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 13:32:56) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+
+SyntaxError (/Library/WebServer/Documents/fluxy/app/models/fluxaliser.rb:18: syntax error, unexpected tASSOC, expecting ')'
+...indByUsername", ("username" => flickr_username))
+                              ^):
+  app/controllers/fluxaliser_controller.rb:17:in `results'
+
+Rendered rescues/_trace (51.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 13:33:16) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+
+http://flickr.com/services/rest/?api_key=&method=flickr.people.findByUsername
+
+ArgumentError (File does not exist: .):
+  /Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib/xmlsimple.rb:984:in `find_xml_file'
+  /Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib/xmlsimple.rb:168:in `xml_in'
+  /Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib/xmlsimple.rb:203:in `xml_in'
+  flickr (1.0.2) /flickr.rb:66:in `request'
+  app/models/fluxaliser.rb:20:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:17:in `results'
+
+Rendered rescues/_trace (47.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 13:36:18) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+
+ArgumentError (File does not exist: .):
+  /Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib/xmlsimple.rb:984:in `find_xml_file'
+  /Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib/xmlsimple.rb:168:in `xml_in'
+  /Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib/xmlsimple.rb:203:in `xml_in'
+  flickr (1.0.2) /flickr.rb:66:in `request'
+  app/models/fluxaliser.rb:22:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:17:in `results'
+
+Rendered rescues/_trace (115.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 13:42:35) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+
+http://flickr.com/services/rest/?api_key=&method=flickr.people.findByUsername
+
+ArgumentError (File does not exist: .):
+  /Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib/xmlsimple.rb:984:in `find_xml_file'
+  /Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib/xmlsimple.rb:168:in `xml_in'
+  /Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib/xmlsimple.rb:203:in `xml_in'
+  flickr (1.0.2) /flickr.rb:66:in `request'
+  app/models/fluxaliser.rb:20:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:17:in `results'
+
+Rendered rescues/_trace (48.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 13:57:44) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+
+http://flickr.com/services/rest/?api_key=&method=flickr.people.findByUsername
+
+ArgumentError (File does not exist: .):
+  /Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib/xmlsimple.rb:984:in `find_xml_file'
+  /Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib/xmlsimple.rb:168:in `xml_in'
+  /Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib/xmlsimple.rb:203:in `xml_in'
+  flickr (1.0.2) /flickr.rb:66:in `request'
+  app/models/fluxaliser.rb:20:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:17:in `results'
+
+Rendered rescues/_trace (52.0ms)
+Rendered rescues/_request_and_response (2.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 14:20:04) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+
+URI::InvalidURIError (bad URI(is not URI?): http://api.flickr.com/services/rest/?api_key=fde46ce0f7c24b9380cb614880e7f9c6&api_sig=9aa1156a654e8047df45b8bc112ffe2a&method=flickr.photos.search&max_taken_date=2009-09-04 23:59:59&extras=license,date_upload,date_taken,owner_name,icon_server,original_format,last_update,geo,tags,machine_tags,o_dims,views,media&min_taken_date=2009-09-04 00:00:00&user_id=33921997@N00):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/uri/common.rb:436:in `split'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/uri/common.rb:485:in `parse'
+  /Library/Ruby/Gems/1.8/gems/flickr-fu-0.1.4/lib/flickr/base.rb:58:in `send_request'
+  /Library/Ruby/Gems/1.8/gems/flickr-fu-0.1.4/lib/flickr/photos.rb:118:in `search'
+  app/models/fluxaliser.rb:20:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:17:in `results'
+
+Rendered rescues/_trace (46.8ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 14:32:21) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+
+URI::InvalidURIError (bad URI(is not URI?): http://api.flickr.com/services/rest/?api_key=fde46ce0f7c24b9380cb614880e7f9c6&api_sig=9aa1156a654e8047df45b8bc112ffe2a&method=flickr.photos.search&max_taken_date=2009-09-04 23:59:59&extras=license,date_upload,date_taken,owner_name,icon_server,original_format,last_update,geo,tags,machine_tags,o_dims,views,media&min_taken_date=2009-09-04 00:00:00&user_id=33921997@N00):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/uri/common.rb:436:in `split'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/uri/common.rb:485:in `parse'
+  /Library/Ruby/Gems/1.8/gems/flickr-fu-0.1.4/lib/flickr/base.rb:58:in `send_request'
+  /Library/Ruby/Gems/1.8/gems/flickr-fu-0.1.4/lib/flickr/photos.rb:118:in `search'
+  app/models/fluxaliser.rb:20:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:17:in `results'
+
+Rendered rescues/_trace (48.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 14:38:24) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+
+TypeError (can't convert String into Integer):
+  /Library/Ruby/Gems/1.8/gems/flickr-fu-0.1.4/lib/flickr/photo_response.rb:35:in `[]'
+  /Library/Ruby/Gems/1.8/gems/flickr-fu-0.1.4/lib/flickr/photo_response.rb:35:in `send'
+  /Library/Ruby/Gems/1.8/gems/flickr-fu-0.1.4/lib/flickr/photo_response.rb:35:in `method_missing'
+  app/models/fluxaliser.rb:48:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:17:in `results'
+
+Rendered rescues/_trace (43.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 14:39:45) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+
+TypeError (can't convert String into Integer):
+  /Library/Ruby/Gems/1.8/gems/flickr-fu-0.1.4/lib/flickr/photo_response.rb:35:in `[]'
+  /Library/Ruby/Gems/1.8/gems/flickr-fu-0.1.4/lib/flickr/photo_response.rb:35:in `send'
+  /Library/Ruby/Gems/1.8/gems/flickr-fu-0.1.4/lib/flickr/photo_response.rb:35:in `method_missing'
+  app/models/fluxaliser.rb:48:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:17:in `results'
+
+Rendered rescues/_trace (43.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 14:40:31) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+
+URI::InvalidURIError (bad URI(is not URI?): http://api.flickr.com/services/rest/?api_key=fde46ce0f7c24b9380cb614880e7f9c6&api_sig=9aa1156a654e8047df45b8bc112ffe2a&method=flickr.photos.search&max_taken_date=2009-09-04 23:59:59&extras=license,date_upload,date_taken,owner_name,icon_server,original_format,last_update,geo,tags,machine_tags,o_dims,views,media&min_taken_date=2009-09-04 00:00:00&user_id=33921997@N00):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/uri/common.rb:436:in `split'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/uri/common.rb:485:in `parse'
+  /Library/Ruby/Gems/1.8/gems/flickr-fu-0.1.4/lib/flickr/base.rb:58:in `send_request'
+  /Library/Ruby/Gems/1.8/gems/flickr-fu-0.1.4/lib/flickr/photos.rb:118:in `search'
+  app/models/fluxaliser.rb:20:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:17:in `results'
+
+Rendered rescues/_trace (45.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 14:40:46) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+
+TypeError (can't convert String into Integer):
+  /Library/Ruby/Gems/1.8/gems/flickr-fu-0.1.4/lib/flickr/photo_response.rb:35:in `[]'
+  /Library/Ruby/Gems/1.8/gems/flickr-fu-0.1.4/lib/flickr/photo_response.rb:35:in `send'
+  /Library/Ruby/Gems/1.8/gems/flickr-fu-0.1.4/lib/flickr/photo_response.rb:35:in `method_missing'
+  app/models/fluxaliser.rb:48:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:17:in `results'
+
+Rendered rescues/_trace (47.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 14:41:41) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+
+NoMethodError (undefined method `[]' for #<Flickr::Photos::Photo:0x244b8ec>):
+  app/models/fluxaliser.rb:52:in `get_flickr_photos'
+  /Library/Ruby/Gems/1.8/gems/flickr-fu-0.1.4/lib/flickr/photo_response.rb:35:in `each'
+  /Library/Ruby/Gems/1.8/gems/flickr-fu-0.1.4/lib/flickr/photo_response.rb:35:in `send'
+  /Library/Ruby/Gems/1.8/gems/flickr-fu-0.1.4/lib/flickr/photo_response.rb:35:in `method_missing'
+  app/models/fluxaliser.rb:51:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:17:in `results'
+
+Rendered rescues/_trace (111.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 14:49:01) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+
+NoMethodError (undefined method `getInfo' for #<Flickr::Photos:0x2650bec>):
+  app/models/fluxaliser.rb:55:in `get_flickr_photos'
+  app/models/fluxaliser.rb:51:in `each'
+  app/models/fluxaliser.rb:51:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:17:in `results'
+
+Rendered rescues/_trace (46.5ms)
+Rendered rescues/_request_and_response (1.9ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 14:49:39) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+
+NoMethodError (undefined method `getinfo' for #<Flickr::Photos:0x238c028>):
+  app/models/fluxaliser.rb:55:in `get_flickr_photos'
+  app/models/fluxaliser.rb:51:in `each'
+  app/models/fluxaliser.rb:51:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:17:in `results'
+
+Rendered rescues/_trace (43.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 14:57:07) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+
+NoMethodError (undefined method `find_by_id' for #<Flickr::Photos:0x267328c>):
+  app/models/fluxaliser.rb:55:in `get_flickr_photos'
+  app/models/fluxaliser.rb:51:in `each'
+  app/models/fluxaliser.rb:51:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:17:in `results'
+
+Rendered rescues/_trace (42.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 14:58:44) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+
+NoMethodError (undefined method `find_by_id' for #<Flickr::Photos:0x241b868>):
+  app/models/fluxaliser.rb:55:in `get_flickr_photos'
+  app/models/fluxaliser.rb:51:in `each'
+  app/models/fluxaliser.rb:51:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:17:in `results'
+
+Rendered rescues/_trace (43.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 15:39:50) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+
+NoMethodError (undefined method `page' for #<Flickr::Photos::Photo:0x261a678>):
+  app/models/fluxaliser.rb:53:in `get_flickr_photos'
+  app/models/fluxaliser.rb:51:in `each'
+  app/models/fluxaliser.rb:51:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:17:in `results'
+
+Rendered rescues/_trace (32.2ms)
+Rendered rescues/_request_and_response (1.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 15:40:12) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+
+NoMethodError (undefined method `dates' for #<Flickr::Photos::Photo:0x24c13a8>):
+  app/models/fluxaliser.rb:55:in `get_flickr_photos'
+  app/models/fluxaliser.rb:51:in `each'
+  app/models/fluxaliser.rb:51:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:17:in `results'
+
+Rendered rescues/_trace (97.3ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 15:40:24) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+
+ActionView::TemplateError (can't convert nil into String) on line #12 of app/views/fluxaliser/results.rhtml:
+9: 		<% @photos.each do |x| %>
+10: 			<p>
+11: 				<%= h(x[:title]) %><br />
+12: 				<%= link_to ( image_tag(x[:thumbnail], :alt => x[:title]), "#{x[:page]}", :title => x[:title]) %>
+13: 			</p>
+14: 		<% end %>
+15: 		<p>Wasn't that fab? Why not <%= link_to "try another day", "/" %> now?</p>
+
+    app/views/fluxaliser/results.rhtml:12:in `_run_rhtml_app47views47fluxaliser47results46rhtml'
+    app/views/fluxaliser/results.rhtml:9:in `each'
+    app/views/fluxaliser/results.rhtml:9:in `_run_rhtml_app47views47fluxaliser47results46rhtml'
+
+Rendered rescues/_trace (41.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 15:41:16) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+
+ActionView::TemplateError (can't convert nil into String) on line #12 of app/views/fluxaliser/results.rhtml:
+9: 		<% @photos.each do |x| %>
+10: 			<p>
+11: 				<%= h(x[:title]) %><br />
+12: 				<%= link_to ( image_tag(x[:thumbnail], :alt => x[:title]), "#{x[:page]}", :title => x[:title]) %>
+13: 			</p>
+14: 		<% end %>
+15: 		<p>Wasn't that fab? Why not <%= link_to "try another day", "/" %> now?</p>
+
+    app/views/fluxaliser/results.rhtml:12:in `_run_rhtml_app47views47fluxaliser47results46rhtml'
+    app/views/fluxaliser/results.rhtml:9:in `each'
+    app/views/fluxaliser/results.rhtml:9:in `_run_rhtml_app47views47fluxaliser47results46rhtml'
+
+Rendered rescues/_trace (104.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 15:43:49) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+#<Flickr::Photos::Photo:0x2631e90>
+#<Flickr::Photos::Photo:0x26302ac>
+#<Flickr::Photos::Photo:0x262e754>
+#<Flickr::Photos::Photo:0x262caf8>
+#<Flickr::Photos::Photo:0x262ae88>
+#<Flickr::Photos::Photo:0x2629150>
+#<Flickr::Photos::Photo:0x2627580>
+#<Flickr::Photos::Photo:0x26259c4>
+#<Flickr::Photos::Photo:0x2623dcc>
+#<Flickr::Photos::Photo:0x2622210>
+#<Flickr::Photos::Photo:0x2620578>
+#<Flickr::Photos::Photo:0x261e980>
+#<Flickr::Photos::Photo:0x261cdc4>
+#<Flickr::Photos::Photo:0x261b244>
+#<Flickr::Photos::Photo:0x2619430>
+#<Flickr::Photos::Photo:0x26178ec>
+#<Flickr::Photos::Photo:0x2615d08>
+#<Flickr::Photos::Photo:0x261414c>
+#<Flickr::Photos::Photo:0x26122fc>
+#<Flickr::Photos::Photo:0x2610614>
+#<Flickr::Photos::Photo:0x260ea1c>
+#<Flickr::Photos::Photo:0x260ce88>
+#<Flickr::Photos::Photo:0x260b290>
+#<Flickr::Photos::Photo:0x26096ac>
+#<Flickr::Photos::Photo:0x2607a64>
+#<Flickr::Photos::Photo:0x2605ebc>
+#<Flickr::Photos::Photo:0x26042ec>
+#<Flickr::Photos::Photo:0x260271c>
+#<Flickr::Photos::Photo:0x2600bec>
+#<Flickr::Photos::Photo:0x25fefe0>
+#<Flickr::Photos::Photo:0x25fd438>
+#<Flickr::Photos::Photo:0x25fb868>
+#<Flickr::Photos::Photo:0x25f9cfc>
+#<Flickr::Photos::Photo:0x25f81a4>
+#<Flickr::Photos::Photo:0x25f65fc>
+#<Flickr::Photos::Photo:0x25f4a54>
+#<Flickr::Photos::Photo:0x25f2ee8>
+#<Flickr::Photos::Photo:0x25f1354>
+#<Flickr::Photos::Photo:0x25ef7c0>
+#<Flickr::Photos::Photo:0x25edbdc>
+#<Flickr::Photos::Photo:0x25ec034>
+#<Flickr::Photos::Photo:0x25ea4a0>
+#<Flickr::Photos::Photo:0x25e88bc>
+#<Flickr::Photos::Photo:0x25e6cb0>
+#<Flickr::Photos::Photo:0x25e5144>
+#<Flickr::Photos::Photo:0x25e3498>
+#<Flickr::Photos::Photo:0x25e1940>
+#<Flickr::Photos::Photo:0x25dfd70>
+#<Flickr::Photos::Photo:0x25de1b4>
+#<Flickr::Photos::Photo:0x25dc508>
+#<Flickr::Photos::Photo:0x25da974>
+#<Flickr::Photos::Photo:0x25d8e44>
+#<Flickr::Photos::Photo:0x25d71e8>
+#<Flickr::Photos::Photo:0x25d558c>
+#<Flickr::Photos::Photo:0x25d39d0>
+#<Flickr::Photos::Photo:0x25d1e50>
+#<Flickr::Photos::Photo:0x25d01f4>
+#<Flickr::Photos::Photo:0x25ce69c>
+#<Flickr::Photos::Photo:0x25cca54>
+#<Flickr::Photos::Photo:0x25caefc>
+#<Flickr::Photos::Photo:0x25c932c>
+#<Flickr::Photos::Photo:0x25c7748>
+#<Flickr::Photos::Photo:0x25c5b50>
+#<Flickr::Photos::Photo:0x25c3fbc>
+#<Flickr::Photos::Photo:0x25c23d8>
+#<Flickr::Photos::Photo:0x25c0754>
+#<Flickr::Photos::Photo:0x25beb98>
+#<Flickr::Photos::Photo:0x25bcf78>
+#<Flickr::Photos::Photo:0x25bb358>
+#<Flickr::Photos::Photo:0x25b97b0>
+#<Flickr::Photos::Photo:0x25b7bcc>
+#<Flickr::Photos::Photo:0x25b6024>
+#<Flickr::Photos::Photo:0x25b4490>
+#<Flickr::Photos::Photo:0x25b2960>
+#<Flickr::Photos::Photo:0x25b0d2c>
+#<Flickr::Photos::Photo:0x25af184>
+#<Flickr::Photos::Photo:0x25ad58c>
+#<Flickr::Photos::Photo:0x25aafa8>
+#<Flickr::Photos::Photo:0x25a9158>
+#<Flickr::Photos::Photo:0x25a759c>
+#<Flickr::Photos::Photo:0x25a59f4>
+#<Flickr::Photos::Photo:0x25a3e60>
+#<Flickr::Photos::Photo:0x25a22cc>
+#<Flickr::Photos::Photo:0x25a05a8>
+#<Flickr::Photos::Photo:0x259e988>
+#<Flickr::Photos::Photo:0x259cde0>
+#<Flickr::Photos::Photo:0x259b2c4>
+#<Flickr::Photos::Photo:0x2599730>
+#<Flickr::Photos::Photo:0x2597b9c>
+#<Flickr::Photos::Photo:0x2595d9c>
+#<Flickr::Photos::Photo:0x2594168>
+#<Flickr::Photos::Photo:0x259250c>
+#<Flickr::Photos::Photo:0x258e2b8>
+#<Flickr::Photos::Photo:0x258c1d4>
+#<Flickr::Photos::Photo:0x258a500>
+#<Flickr::Photos::Photo:0x25870d0>
+#<Flickr::Photos::Photo:0x2581090>
+#<Flickr::Photos::Photo:0x2577b80>
+#<Flickr::Photos::Photo:0x2572f40>
+#<Flickr::Photos::Photo:0x2570d94>
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+
+ActionView::TemplateError (can't convert nil into String) on line #12 of app/views/fluxaliser/results.rhtml:
+9: 		<% @photos.each do |x| %>
+10: 			<p>
+11: 				<%= h(x[:title]) %><br />
+12: 				<%= link_to ( image_tag(x[:thumbnail], :alt => x[:title]), "#{x[:page]}", :title => x[:title]) %>
+13: 			</p>
+14: 		<% end %>
+15: 		<p>Wasn't that fab? Why not <%= link_to "try another day", "/" %> now?</p>
+
+    app/views/fluxaliser/results.rhtml:12:in `_run_rhtml_app47views47fluxaliser47results46rhtml'
+    app/views/fluxaliser/results.rhtml:9:in `each'
+    app/views/fluxaliser/results.rhtml:9:in `_run_rhtml_app47views47fluxaliser47results46rhtml'
+
+Rendered rescues/_trace (39.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 15:44:29) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+Orange
+Shake What Yo Mamma Gave Ya
+Toulouse Rocks Gazelles
+Too Much Booty
+Toulouse
+Toulouse and Rin
+Toulouse
+Farewell Camden Town
+Escape
+Cups
+I Shot the Sherriff
+Sharon
+Minh
+Rin Reflections
+Whitewashed
+Happy Sun Smile Time
+Florian Returns
+Mothra Tetrilandox
+The Chinese Grocer
+Maid to be Punished
+Rin Goes to the Zoo
+Duckie
+Reflection Seen in the Window of a Charity Shop on Leaving Sainsbury's #2
+Green
+Reflection Seen in the Window of a Charity Shop on Leaving Sainsbury's
+The Underpass
+Numbers and Countries
+Dos Equis
+Pookie
+BT Tower with Leaves
+BT Tower
+Telephone Pole
+Fence
+Power Glamour Hollywood Politics
+Euston Road
+MMM FLOWERS GOOD!!!
+Through the Flowers
+The Royal Pavilion
+Bee Love
+The Ascension
+Danger of Death
+25
+BT Tower
+Royal Mail
+Fire Exit
+Your Station
+Liverpool Street Station Intersection Points
+LFIE
+Sister Nancy
+Horizon
+Circular
+Time Spiral
+Eyeball Did It
+Robot
+Graeme
+Giorgio Moroder
+Pub
+Ol' Pint Eye
+The Day Chris Got Sacked
+Rin
+Rin
+Rin
+Morning
+Mannequins
+Fuck Off
+A Cunt
+Thief
+Woman
+Stars
+Grand Bazaar
+Stone
+Collected Fragments
+Collected Fragments
+Marble
+Sarcophagus
+Man
+Woman
+In the Statue Garden
+Kitty
+Antique Market Old Bazaar
+Lamps
+Lamps
+Look At All The Pretty Colours
+Solar Flare
+Kebab Queue
+Casino
+Estate Agents
+In Most Sizes
+Opening Hours
+Holiday Innit!!!
+Regret
+A Wall in Istanbul
+Cemetery
+Cemetery
+Peeling
+Peeling
+Rust
+Spray
+Metal
+State
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+
+ActionView::TemplateError (can't convert nil into String) on line #12 of app/views/fluxaliser/results.rhtml:
+9: 		<% @photos.each do |x| %>
+10: 			<p>
+11: 				<%= h(x[:title]) %><br />
+12: 				<%= link_to ( image_tag(x[:thumbnail], :alt => x[:title]), "#{x[:page]}", :title => x[:title]) %>
+13: 			</p>
+14: 		<% end %>
+15: 		<p>Wasn't that fab? Why not <%= link_to "try another day", "/" %> now?</p>
+
+    app/views/fluxaliser/results.rhtml:12:in `_run_rhtml_app47views47fluxaliser47results46rhtml'
+    app/views/fluxaliser/results.rhtml:9:in `each'
+    app/views/fluxaliser/results.rhtml:9:in `_run_rhtml_app47views47fluxaliser47results46rhtml'
+
+Rendered rescues/_trace (106.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 15:45:58) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+
+NoMethodError (undefined method `dates' for #<Flickr::Photos::Photo:0x2622f30>):
+  app/models/fluxaliser.rb:52:in `get_flickr_photos'
+  app/models/fluxaliser.rb:51:in `each'
+  app/models/fluxaliser.rb:51:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:17:in `results'
+
+Rendered rescues/_trace (29.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 15:47:12) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+
+NoMethodError (undefined method `dates' for #<Flickr::Photos::Photo:0x24a6d64>):
+  app/models/fluxaliser.rb:52:in `get_flickr_photos'
+  app/models/fluxaliser.rb:51:in `each'
+  app/models/fluxaliser.rb:51:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:17:in `results'
+
+Rendered rescues/_trace (29.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 15:47:30) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+
+ActionView::TemplateError (can't convert nil into String) on line #12 of app/views/fluxaliser/results.rhtml:
+9: 		<% @photos.each do |x| %>
+10: 			<p>
+11: 				<%= h(x[:title]) %><br />
+12: 				<%= link_to ( image_tag(x[:thumbnail], :alt => x[:title]), "#{x[:page]}", :title => x[:title]) %>
+13: 			</p>
+14: 		<% end %>
+15: 		<p>Wasn't that fab? Why not <%= link_to "try another day", "/" %> now?</p>
+
+    app/views/fluxaliser/results.rhtml:12:in `_run_rhtml_app47views47fluxaliser47results46rhtml'
+    app/views/fluxaliser/results.rhtml:9:in `each'
+    app/views/fluxaliser/results.rhtml:9:in `_run_rhtml_app47views47fluxaliser47results46rhtml'
+
+Rendered rescues/_trace (41.3ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 15:50:25) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 92500ms (View: 43, DB: 0) | 200 OK [http://0.0.0.0/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 15:55:59) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+
+NoMethodError (undefined method `image_url' for #<Flickr::Photos::Photo:0x24fe910>):
+  app/models/fluxaliser.rb:56:in `get_flickr_photos'
+  app/models/fluxaliser.rb:51:in `each'
+  app/models/fluxaliser.rb:51:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:17:in `results'
+
+Rendered rescues/_trace (29.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 16:00:54) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+
+NoMethodError (undefined method `image_url' for #<Flickr::Photos::Photo:0x26777ec>):
+  app/models/fluxaliser.rb:56:in `get_flickr_photos'
+  app/models/fluxaliser.rb:51:in `each'
+  app/models/fluxaliser.rb:51:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:17:in `results'
+
+Rendered rescues/_trace (29.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 16:03:21) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 81791ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 16:08:13) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 165257ms (View: 63, DB: 0) | 200 OK [http://0.0.0.0/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 16:27:13) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 172827ms (View: 183, DB: 0) | 200 OK [http://0.0.0.0/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 16:31:27) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 143389ms (View: 122, DB: 0) | 200 OK [http://0.0.0.0/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 16:40:55) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 171860ms (View: 115, DB: 0) | 200 OK [http://0.0.0.0/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 16:45:53) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+
+URI::InvalidURIError (bad URI(is not URI?): http://api.flickr.com/services/rest/?method=flickr.photos.search&max_taken_date=2009-09-04 23:59:59&api_key=fde46ce0f7c24b9380cb614880e7f9c6&api_sig=9aa1156a654e8047df45b8bc112ffe2a&extras=license,date_upload,date_taken,owner_name,icon_server,original_format,last_update,geo,tags,machine_tags,o_dims,views,media&min_taken_date=2009-09-04 00:00:00&user_id=33921997@N00):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/uri/common.rb:436:in `split'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/uri/common.rb:485:in `parse'
+  /Library/Ruby/Gems/1.8/gems/flickr-fu-0.1.4/lib/flickr/base.rb:58:in `send_request'
+  /Library/Ruby/Gems/1.8/gems/flickr-fu-0.1.4/lib/flickr/photos.rb:118:in `search'
+  app/models/fluxaliser.rb:20:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:17:in `results'
+
+Rendered rescues/_trace (44.5ms)
+Rendered rescues/_request_and_response (1.9ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 16:51:41) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+
+SyntaxError (/Library/WebServer/Documents/fluxy/app/models/fluxaliser.rb:14: syntax error, unexpected tIDENTIFIER, expecting ')'):
+  app/controllers/fluxaliser_controller.rb:17:in `results'
+
+Rendered rescues/_trace (166.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 16:51:55) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+
+RuntimeError (96: Invalid signature):
+  /Library/Ruby/Gems/1.8/gems/flickr-fu-0.1.4/lib/flickr/base.rb:68:in `send_request'
+  /Library/Ruby/Gems/1.8/gems/flickr-fu-0.1.4/lib/flickr/photos.rb:118:in `search'
+  app/models/fluxaliser.rb:20:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:17:in `results'
+
+Rendered rescues/_trace (42.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 16:52:20) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+
+TypeError (expected numeric):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/date.rb:1204:in `plus_without_duration'
+  app/models/fluxaliser.rb:13:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:17:in `results'
+
+Rendered rescues/_trace (49.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 16:52:52) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 6195ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/fluxaliser/results]
+
+
+Processing FluxaliserController#index (for 127.0.0.1 at 2009-09-04 16:53:57) [GET]
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/index
+Completed in 20ms (View: 17, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 16:54:12) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"8", "day"=>"30", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 1734ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/fluxaliser/results]
+
+
+Processing FluxaliserController#index (for 127.0.0.1 at 2009-09-04 16:54:17) [GET]
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/index
+Completed in 12ms (View: 11, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 16:54:29) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"8", "day"=>"31", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 1774ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 16:59:59) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"8", "day"=>"31", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+
+NoMethodError (undefined method `-' for "2009-08-31 00:00:00":String):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/date.rb:385:in `civil_to_jd'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/date.rb:607:in `valid_civil?'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/date.rb:1480:in `civil'
+  app/models/fluxaliser.rb:13:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:17:in `results'
+
+Rendered rescues/_trace (122.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 17:03:46) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"8", "day"=>"31", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+
+URI::InvalidURIError (bad URI(is not URI?): http://api.flickr.com/services/rest/?method=flickr.photos.search&max_taken_date=2009-08-31 23:59:59&api_key=fde46ce0f7c24b9380cb614880e7f9c6&api_sig=7d1acf70b9c5b781228c2ec3dfddb159&extras=license,date_upload,date_taken,owner_name,icon_server,original_format,last_update,geo,tags,machine_tags,o_dims,views,media&min_taken_date=2009-08-31 00:00:00&user_id=33921997@N00):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/uri/common.rb:436:in `split'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/uri/common.rb:485:in `parse'
+  /Library/Ruby/Gems/1.8/gems/flickr-fu-0.1.4/lib/flickr/base.rb:58:in `send_request'
+  /Library/Ruby/Gems/1.8/gems/flickr-fu-0.1.4/lib/flickr/photos.rb:118:in `search'
+  app/models/fluxaliser.rb:20:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:17:in `results'
+
+Rendered rescues/_trace (43.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 17:06:25) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"8", "day"=>"31", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+
+RuntimeError (96: Invalid signature):
+  /Library/Ruby/Gems/1.8/gems/flickr-fu-0.1.4/lib/flickr/base.rb:68:in `send_request'
+  /Library/Ruby/Gems/1.8/gems/flickr-fu-0.1.4/lib/flickr/photos.rb:118:in `search'
+  app/models/fluxaliser.rb:20:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:17:in `results'
+
+Rendered rescues/_trace (48.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 17:06:57) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"8", "day"=>"31", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+2009-08-31%2000:00:00
+
+RuntimeError (96: Invalid signature):
+  /Library/Ruby/Gems/1.8/gems/flickr-fu-0.1.4/lib/flickr/base.rb:68:in `send_request'
+  /Library/Ruby/Gems/1.8/gems/flickr-fu-0.1.4/lib/flickr/photos.rb:118:in `search'
+  app/models/fluxaliser.rb:22:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:17:in `results'
+
+Rendered rescues/_trace (61.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 17:13:55) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"8", "day"=>"31", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+2009-08-31%2000:00:00
+
+RuntimeError (96: Invalid signature):
+  /Library/Ruby/Gems/1.8/gems/flickr-fu-0.1.4/lib/flickr/base.rb:68:in `send_request'
+  /Library/Ruby/Gems/1.8/gems/flickr-fu-0.1.4/lib/flickr/photos.rb:118:in `search'
+  app/models/fluxaliser.rb:22:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:17:in `results'
+
+Rendered rescues/_trace (53.3ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 17:14:18) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"8", "day"=>"31", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+2009-08-31 00:00:00
+
+URI::InvalidURIError (bad URI(is not URI?): http://api.flickr.com/services/rest/?method=flickr.photos.search&max_taken_date=2009-08-31 23:59:59&api_key=fde46ce0f7c24b9380cb614880e7f9c6&api_sig=7d1acf70b9c5b781228c2ec3dfddb159&extras=license,date_upload,date_taken,owner_name,icon_server,original_format,last_update,geo,tags,machine_tags,o_dims,views,media&min_taken_date=2009-08-31 00:00:00&user_id=33921997@N00):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/uri/common.rb:436:in `split'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/uri/common.rb:485:in `parse'
+  /Library/Ruby/Gems/1.8/gems/flickr-fu-0.1.4/lib/flickr/base.rb:58:in `send_request'
+  /Library/Ruby/Gems/1.8/gems/flickr-fu-0.1.4/lib/flickr/photos.rb:118:in `search'
+  app/models/fluxaliser.rb:22:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:17:in `results'
+
+Rendered rescues/_trace (43.8ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 17:14:21) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"8", "day"=>"31", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+2009-08-31 00:00:00
+
+URI::InvalidURIError (bad URI(is not URI?): http://api.flickr.com/services/rest/?method=flickr.photos.search&max_taken_date=2009-08-31 23:59:59&api_key=fde46ce0f7c24b9380cb614880e7f9c6&api_sig=7d1acf70b9c5b781228c2ec3dfddb159&extras=license,date_upload,date_taken,owner_name,icon_server,original_format,last_update,geo,tags,machine_tags,o_dims,views,media&min_taken_date=2009-08-31 00:00:00&user_id=33921997@N00):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/uri/common.rb:436:in `split'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/uri/common.rb:485:in `parse'
+  /Library/Ruby/Gems/1.8/gems/flickr-fu-0.1.4/lib/flickr/base.rb:58:in `send_request'
+  /Library/Ruby/Gems/1.8/gems/flickr-fu-0.1.4/lib/flickr/photos.rb:118:in `search'
+  app/models/fluxaliser.rb:22:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:17:in `results'
+
+Rendered rescues/_trace (42.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 17:25:22) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"8", "day"=>"31", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+2009-08-31+00:00:00
+
+RuntimeError (96: Invalid signature):
+  /Library/Ruby/Gems/1.8/gems/flickr-fu-0.1.4/lib/flickr/base.rb:68:in `send_request'
+  /Library/Ruby/Gems/1.8/gems/flickr-fu-0.1.4/lib/flickr/photos.rb:118:in `search'
+  app/models/fluxaliser.rb:25:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:17:in `results'
+
+Rendered rescues/_trace (41.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 17:25:41) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"8", "day"=>"31", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+2009-08-31 00:00:00
+
+URI::InvalidURIError (bad URI(is not URI?): http://api.flickr.com/services/rest/?method=flickr.photos.search&max_taken_date=2009-08-31 23:59:59&api_key=fde46ce0f7c24b9380cb614880e7f9c6&api_sig=7d1acf70b9c5b781228c2ec3dfddb159&extras=license,date_upload,date_taken,owner_name,icon_server,original_format,last_update,geo,tags,machine_tags,o_dims,views,media&min_taken_date=2009-08-31 00:00:00&user_id=33921997@N00):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/uri/common.rb:436:in `split'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/uri/common.rb:485:in `parse'
+  /Library/Ruby/Gems/1.8/gems/flickr-fu-0.1.4/lib/flickr/base.rb:58:in `send_request'
+  /Library/Ruby/Gems/1.8/gems/flickr-fu-0.1.4/lib/flickr/photos.rb:118:in `search'
+  app/models/fluxaliser.rb:25:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:17:in `results'
+
+Rendered rescues/_trace (42.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 17:25:49) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"8", "day"=>"31", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+2009-08-31+00:00:00
+
+RuntimeError (96: Invalid signature):
+  /Library/Ruby/Gems/1.8/gems/flickr-fu-0.1.4/lib/flickr/base.rb:68:in `send_request'
+  /Library/Ruby/Gems/1.8/gems/flickr-fu-0.1.4/lib/flickr/photos.rb:118:in `search'
+  app/models/fluxaliser.rb:25:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:17:in `results'
+
+Rendered rescues/_trace (44.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 17:31:03) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"8", "day"=>"31", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+
+URI::InvalidURIError (bad URI(is not URI?): http://api.flickr.com/services/rest/?method=flickr.photos.search&max_taken_date=2009-08-31 23:59:59&api_key=fde46ce0f7c24b9380cb614880e7f9c6&api_sig=7d1acf70b9c5b781228c2ec3dfddb159&extras=license,date_upload,date_taken,owner_name,icon_server,original_format,last_update,geo,tags,machine_tags,o_dims,views,media&min_taken_date=2009-08-31 00:00:00&user_id=33921997@N00):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/uri/common.rb:436:in `split'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/uri/common.rb:485:in `parse'
+  /Library/Ruby/Gems/1.8/gems/flickr-fu-0.1.4/lib/flickr/base.rb:58:in `send_request'
+  /Library/Ruby/Gems/1.8/gems/flickr-fu-0.1.4/lib/flickr/photos.rb:118:in `search'
+  app/models/fluxaliser.rb:20:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:17:in `results'
+
+Rendered rescues/_trace (56.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 17:32:30) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"8", "day"=>"31", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+
+URI::InvalidURIError (bad URI(is not URI?): http://api.flickr.com/services/rest/?method=flickr.photos.search&max_taken_date=2009-08-31 00:00:00&api_key=fde46ce0f7c24b9380cb614880e7f9c6&api_sig=b600c90c0de00ebd0bf9cf0ebe607b35&extras=license,date_upload,date_taken,owner_name,icon_server,original_format,last_update,geo,tags,machine_tags,o_dims,views,media&min_taken_date=2009-08-31 00:00:00&user_id=33921997@N00):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/uri/common.rb:436:in `split'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/uri/common.rb:485:in `parse'
+  /Library/Ruby/Gems/1.8/gems/flickr-fu-0.1.4/lib/flickr/base.rb:58:in `send_request'
+  /Library/Ruby/Gems/1.8/gems/flickr-fu-0.1.4/lib/flickr/photos.rb:118:in `search'
+  app/models/fluxaliser.rb:20:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:17:in `results'
+
+Rendered rescues/_trace (44.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 17:33:18) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"8", "day"=>"31", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 2341ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 17:33:28) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"8", "day"=>"31", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+
+TypeError (can't convert Fixnum into String):
+  app/models/fluxaliser.rb:14:in `+'
+  app/models/fluxaliser.rb:14:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:17:in `results'
+
+Rendered rescues/_trace (49.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 17:33:42) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"8", "day"=>"31", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 9335ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 17:34:20) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"8", "day"=>"2", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"elegantmint"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 2220ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 17:34:27) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"2", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"elegantmint"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 1812ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 17:34:35) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"1", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"elegantmint"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 3817ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 17:34:45) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"elegantmint"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 7749ms (View: 11, DB: 0) | 200 OK [http://0.0.0.0/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 17:35:07) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"petegardner"}
+
+RuntimeError (1: User not found):
+  /Library/Ruby/Gems/1.8/gems/flickr-fu-0.1.4/lib/flickr/base.rb:68:in `send_request'
+  /Library/Ruby/Gems/1.8/gems/flickr-fu-0.1.4/lib/flickr/people.rb:38:in `find_by_username'
+  app/models/fluxaliser.rb:19:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:17:in `results'
+
+Rendered rescues/_trace (120.8ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 17:35:23) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"pete_gardner"}
+
+RuntimeError (1: User not found):
+  /Library/Ruby/Gems/1.8/gems/flickr-fu-0.1.4/lib/flickr/base.rb:68:in `send_request'
+  /Library/Ruby/Gems/1.8/gems/flickr-fu-0.1.4/lib/flickr/people.rb:38:in `find_by_username'
+  app/models/fluxaliser.rb:19:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:17:in `results'
+
+Rendered rescues/_trace (43.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 17:35:38) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"lavona"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 10381ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 17:36:01) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"tedsherarts"}
+
+RuntimeError (1: User not found):
+  /Library/Ruby/Gems/1.8/gems/flickr-fu-0.1.4/lib/flickr/base.rb:68:in `send_request'
+  /Library/Ruby/Gems/1.8/gems/flickr-fu-0.1.4/lib/flickr/people.rb:38:in `find_by_username'
+  app/models/fluxaliser.rb:19:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:17:in `results'
+
+Rendered rescues/_trace (122.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 17:37:37) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"kirstiecat"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 22611ms (View: 4, DB: 0) | 200 OK [http://0.0.0.0/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 17:38:11) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"2", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"kirstiecat"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 3204ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 17:38:27) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"3", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"kirstiecat"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 4609ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 17:39:54) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"8", "day"=>"30", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 5853ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/fluxaliser/results]
+
+
+Processing FluxaliserController#index (for 127.0.0.1 at 2009-09-04 22:16:20) [GET]
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/index
+Completed in 18ms (View: 16, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-04 22:16:24) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"8", "day"=>"30", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 20315ms (View: 4, DB: 0) | 200 OK [http://0.0.0.0/fluxaliser/results]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-04 22:16:45) [GET]
+
+ActionController::RoutingError (No route matches "/fluxaliser/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-04 22:16:45) [GET]
+
+ActionController::RoutingError (No route matches "/fluxaliser/stylesheets/blueprint/print.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FluxaliserController#index (for 127.0.0.1 at 2009-09-05 07:07:04) [GET]
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/index
+Completed in 88ms (View: 85, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing FluxaliserController#index (for 127.0.0.1 at 2009-09-05 07:11:33) [GET]
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/index
+Completed in 121ms (View: 118, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-05 07:11:33) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-05 07:11:35) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"5", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>""}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 25ms (View: 22, DB: 0) | 200 OK [http://0.0.0.0/fluxaliser/results]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-05 07:11:35) [GET]
+
+ActionController::RoutingError (No route matches "/fluxaliser/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-05 07:11:35) [GET]
+
+ActionController::RoutingError (No route matches "/fluxaliser/stylesheets/blueprint/print.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-05 07:11:35) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-05 07:11:40) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"5", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>""}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/fluxaliser/results]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-05 07:11:40) [GET]
+
+ActionController::RoutingError (No route matches "/fluxaliser/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-05 07:11:40) [GET]
+
+ActionController::RoutingError (No route matches "/fluxaliser/stylesheets/blueprint/print.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-05 07:11:40) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FluxaliserController#index (for 127.0.0.1 at 2009-09-05 07:11:42) [GET]
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/index
+Completed in 176ms (View: 173, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-05 07:11:42) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FluxaliserController#index (for 127.0.0.1 at 2009-09-05 07:12:28) [GET]
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/index
+Completed in 18ms (View: 16, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-05 07:12:30) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"5", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>""}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/fluxaliser/results]
+
+
+Processing FluxaliserController#index (for 127.0.0.1 at 2009-09-05 07:12:32) [GET]
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/index
+Completed in 13ms (View: 11, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-05 07:12:48) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"8", "day"=>"14", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 11470ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/fluxaliser/results]
+
+
+Processing FluxaliserController#index (for 127.0.0.1 at 2009-09-05 07:20:42) [GET]
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/index
+Completed in 13ms (View: 11, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing FluxaliserController#index (for 127.0.0.1 at 2009-09-05 07:23:50) [GET]
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/index
+Completed in 17ms (View: 15, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing FluxaliserController#index (for 127.0.0.1 at 2009-09-05 07:24:06) [GET]
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/index
+Completed in 17ms (View: 15, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing FluxaliserController#index (for 127.0.0.1 at 2009-09-05 07:24:56) [GET]
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/index
+Completed in 17ms (View: 15, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing FluxaliserController#index (for 127.0.0.1 at 2009-09-05 07:25:06) [GET]
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/index
+Completed in 17ms (View: 15, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing FluxaliserController#index (for 127.0.0.1 at 2009-09-05 07:25:17) [GET]
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/index
+Completed in 17ms (View: 16, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing FluxaliserController#index (for 127.0.0.1 at 2009-09-05 07:25:33) [GET]
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/index
+Completed in 21ms (View: 18, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing FluxaliserController#index (for 127.0.0.1 at 2009-09-05 07:25:42) [GET]
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/index
+Completed in 18ms (View: 16, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing FluxaliserController#index (for 127.0.0.1 at 2009-09-05 07:26:04) [GET]
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/index
+Completed in 18ms (View: 16, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-05 07:26:27) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"5", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 4597ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/fluxaliser/results]
+
+
+Processing FluxaliserController#index (for 127.0.0.1 at 2009-09-05 07:26:41) [GET]
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/index
+Completed in 13ms (View: 11, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-05 07:27:19) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"5", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 3226ms (View: 10, DB: 0) | 200 OK [http://0.0.0.0/fluxaliser/results]
+
+
+Processing FluxaliserController#index (for 127.0.0.1 at 2009-09-05 07:27:38) [GET]
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/index
+Completed in 13ms (View: 11, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-05 07:27:43) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"5", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 2829ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/fluxaliser/results]
+
+
+Processing FluxaliserController#index (for 127.0.0.1 at 2009-09-05 07:27:57) [GET]
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/index
+Completed in 13ms (View: 11, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing FluxaliserController#index (for 127.0.0.1 at 2009-09-05 07:28:55) [GET]
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/index
+Completed in 17ms (View: 15, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing FluxaliserController#index (for 127.0.0.1 at 2009-09-05 07:29:11) [GET]
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/index
+Completed in 17ms (View: 15, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing FluxaliserController#index (for 127.0.0.1 at 2009-09-05 07:29:18) [GET]
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/index
+Completed in 17ms (View: 15, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing FluxaliserController#index (for 127.0.0.1 at 2009-09-05 07:29:39) [GET]
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/index
+Completed in 17ms (View: 15, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing FluxaliserController#index (for 127.0.0.1 at 2009-09-05 07:29:52) [GET]
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/index
+Completed in 18ms (View: 16, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing FluxaliserController#index (for 127.0.0.1 at 2009-09-05 07:29:57) [GET]
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/index
+Completed in 89ms (View: 87, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-05 07:30:18) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"8", "day"=>"30", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 7397ms (View: 10, DB: 0) | 200 OK [http://0.0.0.0/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-05 07:31:28) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"8", "day"=>"30", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 4603ms (View: 10, DB: 0) | 200 OK [http://0.0.0.0/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-05 07:33:04) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"8", "day"=>"30", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 5923ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-05 07:33:32) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"8", "day"=>"30", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 5713ms (View: 14, DB: 0) | 200 OK [http://0.0.0.0/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-05 07:34:51) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"8", "day"=>"30", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 4561ms (View: 11, DB: 0) | 200 OK [http://0.0.0.0/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-05 07:35:07) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"8", "day"=>"30", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 6398ms (View: 12, DB: 0) | 200 OK [http://0.0.0.0/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-05 07:40:40) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"8", "day"=>"30", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 6067ms (View: 14, DB: 0) | 200 OK [http://0.0.0.0/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-05 07:41:13) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"8", "day"=>"30", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 5850ms (View: 12, DB: 0) | 200 OK [http://0.0.0.0/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-05 07:42:05) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"8", "day"=>"30", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 6117ms (View: 12, DB: 0) | 200 OK [http://0.0.0.0/fluxaliser/results]
+
+
+Processing FluxaliserController#index (for 127.0.0.1 at 2009-09-05 07:42:32) [GET]
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/index
+Completed in 14ms (View: 12, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing FluxaliserController#index (for 127.0.0.1 at 2009-09-06 17:37:33) [GET]
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/index
+Completed in 1258ms (View: 1087, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-06 17:38:25) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.strftime):
+  app/models/fluxaliser.rb:23:in `get_flickr_photos'
+  app/controllers/fluxaliser_controller.rb:17:in `results'
+
+Rendered rescues/_trace (261.1ms)
+Rendered rescues/_request_and_response (33.8ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-06 17:42:29) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+
+ActionView::TemplateError (undefined method `timeperiod' for #<Hash:0x24354e8>) on line #4 of app/views/fluxaliser/results.rhtml:
+1: <% if @flickr_username %>
+2: 	<div class="span-24">
+3: 	<p class="large">
+4: 		Flickr photos for <%= link_to @flickr_username, "http://www.flickr.com/photos/#{@flickr_username}" %> taken <%= @photos[0].timeperiod %>
+5: 	</p>
+6: 
+7: 	<% if @photos.empty? %>
+
+    app/views/fluxaliser/results.rhtml:4:in `_run_rhtml_app47views47fluxaliser47results46rhtml'
+
+Rendered rescues/_trace (51.4ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-06 18:14:29) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 22033ms (View: 19, DB: 0) | 200 OK [http://0.0.0.0/fluxaliser/results]
+
+
+Processing FluxaliserController#index (for 127.0.0.1 at 2009-09-06 18:16:35) [GET]
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/index
+Completed in 90ms (View: 88, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-06 18:16:53) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"8", "day"=>"31", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 10872ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-06 18:17:19) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"8", "day"=>"14", "year"=>"2007"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 10842ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-06 18:17:54) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"10", "day"=>"14", "year"=>"2007"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 7137ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-06 23:04:18) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"10", "day"=>"14", "year"=>"2007"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 17848ms (View: 15, DB: 0) | 200 OK [http://0.0.0.0/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-06 23:04:46) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"11", "day"=>"14", "year"=>"2007"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 16143ms (View: 23, DB: 0) | 200 OK [http://0.0.0.0/fluxaliser/results]
+
+
+Processing FluxaliserController#index (for 127.0.0.1 at 2009-09-08 08:42:19) [GET]
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/index
+Completed in 227ms (View: 225, DB: 0) | 200 OK [http://0.0.0.0/fluxaliser]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-08 08:42:23) [GET]
+
+ActionController::RoutingError (No route matches "/%5C" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FluxaliserController#index (for 127.0.0.1 at 2009-09-08 08:42:26) [GET]
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/index
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-08 08:42:37) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"8", "day"=>"8", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 14563ms (View: 46, DB: 0) | 200 OK [http://0.0.0.0/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-08 08:43:29) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"8", "day"=>"9", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 20391ms (View: 20, DB: 0) | 200 OK [http://0.0.0.0/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-08 08:54:21) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"8", "day"=>"9", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 20041ms (View: 18, DB: 0) | 200 OK [http://0.0.0.0/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-08 09:06:32) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"8", "day"=>"9", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 19328ms (View: 21, DB: 0) | 200 OK [http://0.0.0.0/fluxaliser/results]
+
+
+Processing FluxaliserController#index (for 127.0.0.1 at 2009-09-08 09:12:39) [GET]
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/index
+Completed in 19ms (View: 18, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing FluxaliserController#index (for 127.0.0.1 at 2009-09-08 09:12:40) [GET]
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/index
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing FluxaliserController#index (for 127.0.0.1 at 2009-09-08 09:12:50) [GET]
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/index
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-08 09:13:05) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"8", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 19560ms (View: 15, DB: 0) | 200 OK [http://0.0.0.0/fluxaliser/results]
+
+
+Processing FluxaliserController#index (for 127.0.0.1 at 2009-09-08 09:20:52) [GET]
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/index
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-08 09:20:59) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"6", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 13753ms (View: 12, DB: 0) | 200 OK [http://0.0.0.0/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-08 09:28:06) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"6", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 13912ms (View: 11, DB: 0) | 200 OK [http://0.0.0.0/fluxaliser/results]
+
+
+Processing FluxaliserController#index (for 127.0.0.1 at 2009-09-08 09:29:05) [GET]
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/index
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing FluxaliserController#index (for 127.0.0.1 at 2009-09-08 09:32:47) [GET]
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/index
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-08 09:32:50) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"6", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 16798ms (View: 12, DB: 0) | 200 OK [http://0.0.0.0/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-08 09:34:28) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"6", "year"=>"2008"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"elegantmint"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]) on line #4 of app/views/fluxaliser/results.rhtml:
+1: <% if @flickr_username %>
+2: 	<div class="span-24">
+3: 	<p>
+4: 		<% if @photos[0][:found_photos_for_selected_date] %>
+5: 			Flickr photos for <%= link_to @flickr_username, "http://www.flickr.com/photos/#{@flickr_username}" %> taken <%= @photos[0][:timeperiod] %> <%= @photos[0][:showing_random_photos] %> 
+6: 		<% elsif @photos[0][:showing_random_photos] %>
+7: 			We couldn't find any photos taken by <%= link_to @flickr_username, "http://www.flickr.com/photos/#{@flickr_username}" %> on <%= @destination.strftime('%A, %e %B %Y') %>, but here's a few random snaps from their Flickr account instead.
+
+    app/views/fluxaliser/results.rhtml:4:in `_run_rhtml_app47views47fluxaliser47results46rhtml'
+
+Rendered rescues/_trace (109.6ms)
+Rendered rescues/_request_and_response (25.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#index (for 127.0.0.1 at 2009-09-08 09:38:43) [GET]
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/index
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-08 09:38:45) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"6", "year"=>"2008"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"elegantmint"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 4383ms (View: 4, DB: 0) | 200 OK [http://0.0.0.0/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-08 09:40:08) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"6", "year"=>"2008"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"elegantmint"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 9454ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/fluxaliser/results]
+
+
+Processing FluxaliserController#index (for 127.0.0.1 at 2009-09-08 13:29:32) [GET]
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/index
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-08 13:29:46) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"8", "year"=>"2008"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 83054ms (View: 78, DB: 0) | 200 OK [http://0.0.0.0/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-08 13:36:33) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"8", "day"=>"31", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 12205ms (View: 10, DB: 0) | 200 OK [http://0.0.0.0/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-08 13:37:25) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"8", "day"=>"31", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 9697ms (View: 17, DB: 0) | 200 OK [http://0.0.0.0/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-08 13:38:38) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"8", "day"=>"31", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+ERROR: compiling _run_rhtml_app47views47fluxaliser47results46rhtml RAISED compile error
+/Library/WebServer/Documents/fluxy/app/views/fluxaliser/results.rhtml:13: syntax error, unexpected kELSE, expecting kEND
+@output_buffer.concat "\t\t";  else ; @output_buffer.concat "\n"
+                                   ^
+Function body:           def _run_rhtml_app47views47fluxaliser47results46rhtml(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ;  if @flickr_username ; @output_buffer.concat "\n"
+@output_buffer.concat "\t<div class=\"span-24\">\n"
+@output_buffer.concat "\t\t";  if @photos.empty? ; @output_buffer.concat "\n"
+@output_buffer.concat "\t\t\t<p>Lame! "; @output_buffer.concat(( link_to @flickr_username, "http://www.flickr.com/photos/#{@flickr_username}" ).to_s); @output_buffer.concat " didn't take any photos that day! Why not "; @output_buffer.concat(( link_to "try another day", "/" ).to_s); @output_buffer.concat "?</p>\n"
+@output_buffer.concat "\t\t";  else ; @output_buffer.concat "\n"
+@output_buffer.concat "\t\t\t";  @photos.each do |x| ; @output_buffer.concat "\n"
+@output_buffer.concat "\t\t\t\t<div class=\"box\">\n"
+@output_buffer.concat "\t\t\t\t\t"; @output_buffer.concat(( h(x[:title]) ).to_s); @output_buffer.concat "<br />\n"
+@output_buffer.concat "\t\t\t\t\t<span class=\"append-bottom\">"; @output_buffer.concat(( link_to ( image_tag(x[:thumbnail], :alt => x[:title]), "#{x[:page]}", :title => x[:title]) ).to_s); @output_buffer.concat "</span>\n"
+@output_buffer.concat "\t\t\t\t</div>\n"
+@output_buffer.concat "\t\t\t";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "\t\t\t<p>Wasn't that fab? Why not "; @output_buffer.concat(( link_to "try another day", "/" ).to_s); @output_buffer.concat " now?</p>\n"
+@output_buffer.concat "\t\t";  else ; @output_buffer.concat "\n"
+@output_buffer.concat "\t\t\t<p>\n"
+@output_buffer.concat "\t\t\t\t";  if @photos[0][:found_photos_for_selected_date] ; @output_buffer.concat "\n"
+@output_buffer.concat "\t\t\t\t\tFlickr photos for "; @output_buffer.concat(( link_to @flickr_username, "http://www.flickr.com/photos/#{@flickr_username}" ).to_s); @output_buffer.concat " taken "; @output_buffer.concat(( @photos[0][:timeperiod] ).to_s); @output_buffer.concat ". \n"
+@output_buffer.concat "\t\t\t\t";  elsif @photos[0][:showing_random_photos] ; @output_buffer.concat "\n"
+@output_buffer.concat "\t\t\t\t\tWe couldn't find any photos taken by "; @output_buffer.concat(( link_to @flickr_username, "http://www.flickr.com/photos/#{@flickr_username}" ).to_s); @output_buffer.concat " on "; @output_buffer.concat(( @destination.strftime('%A, %e %B %Y') ).to_s); @output_buffer.concat ", but here's a few random snaps from their Flickr account instead.\n"
+@output_buffer.concat "\t\t\t\t";  else ; @output_buffer.concat "\n"
+@output_buffer.concat "\t\t\t\t\tAlthough "; @output_buffer.concat(( link_to @flickr_username, "http://www.flickr.com/photos/#{@flickr_username}" ).to_s); @output_buffer.concat " didn't take any pictures on "; @output_buffer.concat(( @destination.strftime('%A, %e %B %Y') ).to_s); @output_buffer.concat ", here are some of their shots taken "; @output_buffer.concat(( @photos[0][:timeperiod] ).to_s); @output_buffer.concat ".\n"
+@output_buffer.concat "\t\t\t\t";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "\t\t\t</p>\n"
+@output_buffer.concat "\t\t";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "\t</div>\n"
+ end ; @output_buffer.concat "\n"
+@output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Library/WebServer/Documents/fluxy/app/views/fluxaliser/results.rhtml:29:in `compile!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:61:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:28:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_view/template.rb:199:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:260:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:343:in `_render_with_layout'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:257:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1250:in `render_for_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1326:in `default_render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:617:in `call_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/flash.rb:146:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `process_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:606:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:391:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:386:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/routing/route_set.rb:437:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:121:in `_call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:9:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:28:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/params_parser.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/failsafe.rb:26:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:114:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/reloader.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:108:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.4/lib/rails/rack/static.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.4/lib/rails/rack/log_tailer.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.4/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Library/WebServer/Documents/fluxy/app/views/fluxaliser/results.rhtml:13: syntax error, unexpected kELSE, expecting kEND
+@output_buffer.concat "\t\t";  else ; @output_buffer.concat "\n"
+                                   ^) on line #13 of app/views/fluxaliser/results.rhtml:
+10: 				</div>
+11: 			<% end %>
+12: 			<p>Wasn't that fab? Why not <%= link_to "try another day", "/" %> now?</p>
+13: 		<% else %>
+14: 			<p>
+15: 				<% if @photos[0][:found_photos_for_selected_date] %>
+16: 					Flickr photos for <%= link_to @flickr_username, "http://www.flickr.com/photos/#{@flickr_username}" %> taken <%= @photos[0][:timeperiod] %>. 
+
+    app/views/fluxaliser/results.rhtml:29:in `compile!'
+
+Rendered rescues/_trace (43.9ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-08 13:39:08) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"8", "day"=>"31", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 9144ms (View: 17, DB: 0) | 200 OK [http://0.0.0.0/fluxaliser/results]
+
+
+Processing FluxaliserController#index (for 127.0.0.1 at 2009-09-08 13:39:32) [GET]
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/index
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-08 13:39:39) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"9", "day"=>"4", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"elegantmint"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 27892ms (View: 26, DB: 0) | 200 OK [http://0.0.0.0/fluxaliser/results]
+
+
+Processing FluxaliserController#index (for 127.0.0.1 at 2009-09-08 13:41:00) [GET]
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/index
+Completed in 12ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-08 15:25:28) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"8", "day"=>"31", "year"=>"2009"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 28701ms (View: 10, DB: 0) | 200 OK [http://0.0.0.0/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-08 15:27:35) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"6", "day"=>"7", "year"=>"2008"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"daveknapik"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 3658ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/fluxaliser/results]
+
+
+Processing FluxaliserController#results (for 127.0.0.1 at 2009-09-08 15:27:50) [POST]
+  Parameters: {"commit"=>"Submit", "destination"=>{"month"=>"6", "day"=>"7", "year"=>"2008"}, "authenticity_token"=>"sy88cQyzyMlnYnmgDXhFOD68AC4yDmJL4pl5DP3104M=", "flickr_username"=>"elegantmint"}
+Rendering template within layouts/fluxaliser
+Rendering fluxaliser/results
+Completed in 4958ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/fluxaliser/results]

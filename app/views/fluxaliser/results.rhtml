@@ -1,0 +1,25 @@
+<% if @flickr_username %>
+	<div class="span-24">
+	<p>
+		<% if @photos[0][:found_photos_for_selected_date] %>
+			Flickr photos for <%= link_to @flickr_username, "http://www.flickr.com/photos/#{@flickr_username}" %> taken <%= @photos[0][:timeperiod] %>. 
+		<% elsif @photos[0][:showing_random_photos] %>
+			We couldn't find any photos taken by <%= link_to @flickr_username, "http://www.flickr.com/photos/#{@flickr_username}" %> on <%= @destination.strftime('%A, %e %B %Y') %>, but here's a few random snaps from their Flickr account instead.
+		<% else %>
+			Although <%= link_to @flickr_username, "http://www.flickr.com/photos/#{@flickr_username}" %> didn't take any pictures on <%= @destination.strftime('%A, %e %B %Y') %>, here are some of their shots taken <%= @photos[0][:timeperiod] %>.
+		<% end %>
+	</p>
+
+	<% if @photos.empty? %>
+		<p>Lame! <%= link_to @flickr_username, "http://www.flickr.com/photos/#{@flickr_username}" %> didn't take any photos that day! Why not <%= link_to "try another day", "/" %>?</p>
+	<% else %>
+		<% @photos.each do |x| %>
+			<div class="box">
+				<%= h(x[:title]) %><br />
+				<span class="append-bottom"><%= link_to ( image_tag(x[:thumbnail], :alt => x[:title]), "#{x[:page]}", :title => x[:title]) %></span>
+			</div>
+		<% end %>
+		<p>Wasn't that fab? Why not <%= link_to "try another day", "/" %> now?</p>
+	<% end %>
+	</div>
+<% end %>
